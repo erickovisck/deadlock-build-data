@@ -1,0 +1,3018 @@
+{
+  "patch": "2026-10-16",
+  "source": "Gerado por LLM (Claude) a partir de `npm run kits -- dump` (descrições, escalas e melhorias da deadlock-api). Revise à mão e ajuste a cada patch (npm run kits -- check valida). Alvos de imbuir também são julgamento do LLM. Heróis com \"archetypes\" têm vários estilos de jogo; coreItems e abilityMaxPriority (slots 1–4) também são julgamento do LLM.",
+  "heroes": {
+    "Abrams": {
+      "defaultArchetype": "brawler_melee",
+      "archetypes": {
+        "brawler_melee": {
+          "name": "Melee Brawler / Sustain",
+          "damage": {
+            "weapon": 0.35,
+            "spirit": 0.35,
+            "melee": 0.3
+          },
+          "affinity": {
+            "health": 0.9,
+            "melee": 0.8,
+            "spirit_power": 0.5,
+            "cooldown": 0.5,
+            "weapon_damage": 0.5,
+            "range": 0.4,
+            "bullet_lifesteal": 0.4,
+            "spirit_lifesteal": 0.4
+          },
+          "notes": {
+            "health": "Infernal Resilience regenerates part of the damage taken",
+            "melee": "short-range brawler, lives in melee",
+            "spirit_power": "Siphon Life and Seismic Impact scale with spirit",
+            "cooldown": "Shoulder Charge (33s) is the main engage"
+          },
+          "summary": "Frontline tank: health, melee and sustain; spirit boosts Siphon Life and the ult.",
+          "imbue": {
+            "damage": "Siphon Life",
+            "cooldown": "Shoulder Charge",
+            "cooldown_non_ult": "Shoulder Charge",
+            "duration": "Shoulder Charge",
+            "range": "Seismic Impact",
+            "frequent": "Shoulder Charge"
+          },
+          "coreItems": [
+            "Melee Charge",
+            "Stalker",
+            "Bullet Resist Shredder"
+          ],
+          "abilityMaxPriority": [
+            2,
+            4,
+            3,
+            1
+          ],
+          "innate": {
+            "unstoppable": {
+              "ability": "Seismic Impact",
+              "tier": 3
+            }
+          },
+          "primaryInvestment": "weapon",
+          "antiHealDelivery": "hybrid",
+          "survival": "resist_hp"
+        },
+        "spirit_siphon": {
+          "name": "Spirit Drain / Disruptor",
+          "summary": "Spirit drain with a long Siphon Life and frequent engages with Shoulder Charge and Seismic Impact.",
+          "damage": {
+            "weapon": 0.2,
+            "spirit": 0.55,
+            "melee": 0.25
+          },
+          "affinity": {
+            "spirit_power": 0.85,
+            "cooldown": 0.75,
+            "duration": 0.7,
+            "health": 0.75,
+            "range": 0.6,
+            "spirit_lifesteal": 0.5
+          },
+          "notes": {
+            "spirit_power": "scales Siphon Life's damage and healing per second",
+            "cooldown": "more engages with Shoulder Charge and Seismic Impact",
+            "duration": "Siphon Life drains for longer",
+            "range": "Siphon Life catches more enemies in its radius"
+          },
+          "imbue": {
+            "damage": "Siphon Life",
+            "cooldown": "Shoulder Charge",
+            "cooldown_non_ult": "Shoulder Charge",
+            "duration": "Shoulder Charge",
+            "range": "Seismic Impact",
+            "frequent": "Siphon Life"
+          },
+          "coreItems": [
+            "Bullet Resist Shredder"
+          ],
+          "abilityMaxPriority": [
+            2,
+            4,
+            3,
+            1
+          ],
+          "innate": {
+            "unstoppable": {
+              "ability": "Seismic Impact",
+              "tier": 3
+            }
+          },
+          "primaryInvestment": "spirit",
+          "antiHealDelivery": "spirit",
+          "survival": "resist_hp"
+        }
+      }
+    },
+    "Apollo": {
+      "damage": {
+        "weapon": 0.3,
+        "spirit": 0.4,
+        "melee": 0.3
+      },
+      "affinity": {
+        "spirit_power": 0.6,
+        "cooldown": 0.6,
+        "melee": 0.6,
+        "mobility": 0.5,
+        "health": 0.4,
+        "weapon_damage": 0.3,
+        "fire_rate": 0.3
+      },
+      "notes": {
+        "spirit_power": "Itani Lo Sahn: delayed damage scales 2.6× with spirit",
+        "cooldown": "Sigil (12s), Riposte and Flawless Advance on a short rotation",
+        "melee": "Flawless Advance and Riposte fight up close and reduce melee resist"
+      },
+      "summary": "Blade duelist: short ability rotation + a spirit ult.",
+      "imbue": {
+        "damage": "Flawless Advance",
+        "cooldown": "Riposte",
+        "cooldown_non_ult": "Riposte",
+        "duration": "Riposte",
+        "range": "Flawless Advance",
+        "frequent": "Flawless Advance"
+      },
+      "primaryInvestment": "spirit",
+      "antiHealDelivery": "hybrid",
+      "coreItems": [
+        "Improved Spirit"
+      ],
+      "abilityMaxPriority": [
+        3,
+        1,
+        4,
+        2
+      ],
+      "survival": "resist_hp"
+    },
+    "Baba": {
+      "damage": {
+        "weapon": 0.45,
+        "spirit": 0.5,
+        "melee": 0.05
+      },
+      "affinity": {
+        "spirit_power": 0.7,
+        "fire_rate": 0.5,
+        "cooldown": 0.5,
+        "weapon_damage": 0.4,
+        "range": 0.4,
+        "ammo": 0.3,
+        "melee": 0.3,
+        "mobility": 0.3
+      },
+      "notes": {
+        "spirit_power": "Feed The Birds and Baba's Brew scale with spirit",
+        "fire_rate": "Threadsap: with stolen spirit, every bullet deals extra spirit damage",
+        "range": "Brew and Feed The Birds are area abilities"
+      },
+      "summary": "Hybrid: steals spirit and turns it into bullet damage.",
+      "imbue": {
+        "damage": "Feed The Birds",
+        "cooldown": "Granny Long Legs",
+        "cooldown_non_ult": "Threadsap",
+        "duration": "Granny Long Legs",
+        "range": "Baba's Brew",
+        "charges": "Threadsap",
+        "frequent": "Threadsap"
+      },
+      "primaryInvestment": "spirit",
+      "antiHealDelivery": "hybrid",
+      "survival": "barrier_cleanse",
+      "coreItems": [
+        "Radiant Regeneration",
+        "Healing Booster",
+        "Healbane"
+      ],
+      "abilityMaxPriority": [
+        1,
+        2,
+        3,
+        4
+      ]
+    },
+    "Bebop": {
+      "defaultArchetype": "bomb_spirit",
+      "archetypes": {
+        "bomb_spirit": {
+          "name": "Spirit / Bomb and Hyper Beam",
+          "summary": "Hook, bomb and beam: Sticky Bomb (1.5×) and Hyper Beam (2.5×) scale with spirit.",
+          "damage": {
+            "weapon": 0.3,
+            "spirit": 0.6,
+            "melee": 0.1
+          },
+          "affinity": {
+            "spirit_power": 0.9,
+            "cooldown": 0.6,
+            "range": 0.5,
+            "health": 0.5,
+            "duration": 0.4,
+            "spirit_lifesteal": 0.4
+          },
+          "notes": {
+            "spirit_power": "Sticky Bomb scales 1.5× and Hyper Beam 2.5× with spirit",
+            "cooldown": "more hooks and bombs per fight",
+            "range": "Grapple Arm and the bomb from farther away"
+          },
+          "imbue": {
+            "damage": "Sticky Bomb",
+            "cooldown": "Sticky Bomb",
+            "cooldown_non_ult": "Sticky Bomb",
+            "duration": "Hyper Beam",
+            "range": "Sticky Bomb",
+            "frequent": "Sticky Bomb"
+          },
+          "primaryInvestment": "spirit",
+          "antiHealDelivery": "spirit",
+          "survival": "resist_hp",
+          "coreItems": [
+            "Improved Spirit",
+            "Arcane Surge"
+          ],
+          "abilityMaxPriority": [
+            3,
+            4,
+            2,
+            1
+          ]
+        },
+        "gun_uppercut": {
+          "name": "Gun / Hook and shoot",
+          "summary": "Frontline shooter: pulls with the hook and finishes with the gun.",
+          "damage": {
+            "weapon": 0.7,
+            "spirit": 0.2,
+            "melee": 0.1
+          },
+          "affinity": {
+            "weapon_damage": 0.8,
+            "fire_rate": 0.6,
+            "ammo": 0.5,
+            "health": 0.5,
+            "bullet_lifesteal": 0.4,
+            "cooldown": 0.4,
+            "range": 0.3
+          },
+          "notes": {
+            "weapon_damage": "gun builds go Headhunter and Bullet Resist Shredder",
+            "fire_rate": "Bebop's gun gains fire rate while firing",
+            "health": "fights up front after the hook"
+          },
+          "imbue": {
+            "damage": "Sticky Bomb",
+            "cooldown": "Sticky Bomb",
+            "cooldown_non_ult": "Sticky Bomb",
+            "duration": "Hyper Beam",
+            "range": "Sticky Bomb",
+            "frequent": "Sticky Bomb"
+          },
+          "primaryInvestment": "weapon",
+          "antiHealDelivery": "gun",
+          "survival": "resist_hp",
+          "coreItems": [
+            "Stalker",
+            "Headhunter"
+          ],
+          "abilityMaxPriority": [
+            3,
+            4,
+            2,
+            1
+          ]
+        }
+      }
+    },
+    "Billy": {
+      "damage": {
+        "weapon": 0.35,
+        "spirit": 0.3,
+        "melee": 0.35
+      },
+      "affinity": {
+        "melee": 0.9,
+        "health": 0.7,
+        "spirit_power": 0.5,
+        "cooldown": 0.5,
+        "weapon_damage": 0.5,
+        "mobility": 0.4,
+        "bullet_lifesteal": 0.3
+      },
+      "notes": {
+        "melee": "Blasted: melee hits reload ammo and apply Wrecked",
+        "health": "fights in the middle of the enemy team with Chain Gang",
+        "weapon_damage": "Rising Ram gives +25% weapon damage on hit"
+      },
+      "summary": "Bat brawler: melee feeds the gun; needs health to dive in.",
+      "imbue": {
+        "damage": "Bashdown",
+        "cooldown": "Blasted",
+        "cooldown_non_ult": "Bashdown",
+        "duration": "Blasted",
+        "range": "Bashdown",
+        "charges": "Bashdown",
+        "frequent": "Bashdown"
+      },
+      "innate": {
+        "unstoppable": {
+          "ability": "Chain Gang",
+          "tier": 3
+        }
+      },
+      "primaryInvestment": "weapon",
+      "antiHealDelivery": "gun",
+      "survival": "resist_hp",
+      "coreItems": [
+        "Lifestrike",
+        "Stalker"
+      ],
+      "abilityMaxPriority": [
+        2,
+        1,
+        3,
+        4
+      ]
+    },
+    "Calico": {
+      "damage": {
+        "weapon": 0.35,
+        "spirit": 0.4,
+        "melee": 0.25
+      },
+      "affinity": {
+        "cooldown": 0.7,
+        "spirit_power": 0.6,
+        "melee": 0.6,
+        "mobility": 0.5,
+        "weapon_damage": 0.3,
+        "health": 0.3
+      },
+      "notes": {
+        "cooldown": "Gloom Bombs (14s) and Leaping Slash (13s) cycle fast",
+        "spirit_power": "Gloom Bombs and Return to Shadows deal spirit damage",
+        "melee": "Leaping Slash scales with melee damage"
+      },
+      "summary": "Burst assassin: spirit bombs + melee slash, gets in and out with Ava.",
+      "imbue": {
+        "damage": "Gloom Bombs",
+        "cooldown": "Return to Shadows",
+        "cooldown_non_ult": "Gloom Bombs",
+        "duration": "Ava",
+        "range": "Gloom Bombs",
+        "frequent": "Gloom Bombs"
+      },
+      "primaryInvestment": "weapon",
+      "antiHealDelivery": "hybrid",
+      "survival": "barrier_cleanse",
+      "coreItems": [
+        "Stalker",
+        "Cold Front",
+        "Spirit Snatch"
+      ],
+      "abilityMaxPriority": [
+        4,
+        1,
+        3,
+        2
+      ]
+    },
+    "Celeste": {
+      "damage": {
+        "weapon": 0.2,
+        "spirit": 0.8,
+        "melee": 0
+      },
+      "affinity": {
+        "spirit_power": 0.9,
+        "cooldown": 0.7,
+        "range": 0.5,
+        "spirit_lifesteal": 0.5,
+        "duration": 0.4,
+        "charges": 0.3
+      },
+      "notes": {
+        "spirit_power": "weak gun (1.7 shots/s): the damage comes from abilities",
+        "cooldown": "Light Eater, Radiant Daggers and Shining Wonder depend on cooldown",
+        "spirit_lifesteal": "Light Eater grants spirit lifesteal"
+      },
+      "summary": "Pure spirit caster.",
+      "imbue": {
+        "damage": "Radiant Daggers",
+        "cooldown": "Dazzling Trick",
+        "cooldown_non_ult": "Light Eater",
+        "duration": "Light Eater",
+        "range": "Radiant Daggers",
+        "charges": "Radiant Daggers",
+        "frequent": "Light Eater"
+      },
+      "primaryInvestment": "spirit",
+      "antiHealDelivery": "spirit",
+      "survival": "barrier_cleanse",
+      "coreItems": [
+        "Radiant Regeneration",
+        "Suppressor",
+        "Healing Booster"
+      ],
+      "abilityMaxPriority": [
+        3,
+        1,
+        2,
+        4
+      ]
+    },
+    "Deadman Danny": {
+      "damage": {
+        "weapon": 0.4,
+        "spirit": 0.55,
+        "melee": 0.05
+      },
+      "affinity": {
+        "spirit_power": 0.8,
+        "weapon_damage": 0.55,
+        "cooldown": 0.6,
+        "health": 0.55,
+        "mobility": 0.4,
+        "range": 0.3,
+        "fire_rate": 0.3
+      },
+      "notes": {
+        "spirit_power": "Strix Salvo, the Chimera Mk1 explosion and Close The Deal scale with spirit",
+        "weapon_damage": "the charged shot consumes the Strix Salvo mark; Jettison Fuel and the Chimera explosion scale with weapon damage",
+        "health": "Chimera Mk1 and Close The Deal damage himself",
+        "cooldown": "Strix Salvo (25s), Chimera Mk1 (21s) and Jettison Fuel (22s) drive the combo"
+      },
+      "summary": "Hybrid air diver: marks with Strix Salvo, consumes it with the charged shot and flies in to grab a target with the ult.",
+      "imbue": {
+        "damage": "Chimera Mk1",
+        "cooldown": "Strix Salvo",
+        "cooldown_non_ult": "Chimera Mk1",
+        "duration": "Jettison Fuel",
+        "range": "Strix Salvo",
+        "frequent": "Strix Salvo"
+      },
+      "primaryInvestment": "spirit",
+      "antiHealDelivery": "spirit",
+      "survival": "barrier_cleanse",
+      "coreItems": [
+        "Improved Spirit"
+      ],
+      "abilityMaxPriority": [
+        2,
+        1,
+        4,
+        3
+      ]
+    },
+    "Drifter": {
+      "damage": {
+        "weapon": 0.5,
+        "spirit": 0.25,
+        "melee": 0.25
+      },
+      "affinity": {
+        "weapon_damage": 0.7,
+        "melee": 0.6,
+        "cooldown": 0.5,
+        "mobility": 0.5,
+        "spirit_power": 0.4,
+        "bullet_lifesteal": 0.4,
+        "fire_rate": 0.4,
+        "health": 0.4
+      },
+      "notes": {
+        "weapon_damage": "133 DPS gun with short damage falloff (22–27m): kills up close",
+        "melee": "Rend deals extra melee damage at short range",
+        "mobility": "Stalker's Mark and Bloodscent hunt isolated targets"
+      },
+      "summary": "Hunter of isolated targets with a strong short-range gun.",
+      "imbue": {
+        "damage": "Rend",
+        "cooldown": "Rend",
+        "cooldown_non_ult": "Stalker's Mark",
+        "duration": "Stalker's Mark",
+        "range": "Rend",
+        "frequent": "Rend"
+      },
+      "innate": {
+        "antiHeal": {
+          "ability": "Stalker's Mark",
+          "tier": 3
+        }
+      },
+      "primaryInvestment": "weapon",
+      "antiHealDelivery": "gun",
+      "survival": "barrier_cleanse",
+      "coreItems": [
+        "Stalker",
+        "Kinetic Dash",
+        "Fortitude"
+      ],
+      "abilityMaxPriority": [
+        1,
+        2,
+        3,
+        4
+      ]
+    },
+    "Dynamo": {
+      "defaultArchetype": "support_initiator",
+      "archetypes": {
+        "support_initiator": {
+          "name": "Initiator / Support",
+          "damage": {
+            "weapon": 0.3,
+            "spirit": 0.7,
+            "melee": 0
+          },
+          "affinity": {
+            "cooldown": 0.9,
+            "spirit_power": 0.6,
+            "health": 0.6,
+            "healing_power": 0.5,
+            "range": 0.5,
+            "duration": 0.5,
+            "charges": 0.3,
+            "mobility": 0.3
+          },
+          "notes": {
+            "cooldown": "Singularity has a 250s cooldown and Rejuvenating Aurora 48s",
+            "healing_power": "Rejuvenating Aurora heals you and allies",
+            "range": "Singularity pulls everyone in its radius"
+          },
+          "summary": "Initiator/support: the value comes from having the ult ready for fights.",
+          "imbue": {
+            "damage": "Kinetic Pulse",
+            "cooldown": "Singularity",
+            "cooldown_non_ult": "Quantum Entanglement",
+            "duration": "Singularity",
+            "range": "Singularity",
+            "charges": "Kinetic Pulse",
+            "frequent": "Kinetic Pulse"
+          },
+          "coreItems": [
+            "Compress Cooldown",
+            "Rapid Recharge"
+          ],
+          "abilityMaxPriority": [
+            1,
+            3,
+            2,
+            4
+          ],
+          "primaryInvestment": "spirit",
+          "antiHealDelivery": "spirit",
+          "survival": "resist_hp"
+        },
+        "gun_dynamo": {
+          "name": "Gun / Brawler",
+          "summary": "Makes use of the gun and high health; Singularity is still the engage.",
+          "damage": {
+            "weapon": 0.6,
+            "spirit": 0.3,
+            "melee": 0.1
+          },
+          "affinity": {
+            "fire_rate": 0.7,
+            "weapon_damage": 0.7,
+            "health": 0.7,
+            "ammo": 0.6,
+            "bullet_lifesteal": 0.5,
+            "cooldown": 0.5
+          },
+          "notes": {
+            "fire_rate": "the gun becomes the steady damage source",
+            "health": "stays in the fight after pulling with Singularity"
+          },
+          "imbue": {
+            "damage": "Kinetic Pulse",
+            "cooldown": "Singularity",
+            "cooldown_non_ult": "Quantum Entanglement",
+            "duration": "Singularity",
+            "range": "Kinetic Pulse",
+            "charges": "Kinetic Pulse",
+            "frequent": "Kinetic Pulse"
+          },
+          "abilityMaxPriority": [
+            1,
+            3,
+            2,
+            4
+          ],
+          "primaryInvestment": "weapon",
+          "antiHealDelivery": "gun",
+          "survival": "resist_hp",
+          "coreItems": [
+            "Headhunter",
+            "Recharging Rush"
+          ]
+        }
+      }
+    },
+    "Graves": {
+      "damage": {
+        "weapon": 0.3,
+        "spirit": 0.7,
+        "melee": 0
+      },
+      "affinity": {
+        "spirit_power": 0.7,
+        "cooldown": 0.7,
+        "duration": 0.5,
+        "charges": 0.5,
+        "health": 0.4,
+        "range": 0.3
+      },
+      "notes": {
+        "cooldown": "Jar of Dead: the cost scales with cooldown reduction",
+        "duration": "Grasping Hands and Borrowed Decree (16s) last longer",
+        "charges": "Jar of Dead has 4 charges"
+      },
+      "summary": "Summoner: summons and area denial with spirit.",
+      "imbue": {
+        "damage": "Borrowed Decree",
+        "cooldown": "Grasping Hands",
+        "cooldown_non_ult": "Jar of Dead",
+        "duration": "Borrowed Decree",
+        "range": "Grasping Hands",
+        "charges": "Jar of Dead",
+        "frequent": "Jar of Dead"
+      },
+      "primaryInvestment": "spirit",
+      "antiHealDelivery": "spirit",
+      "survival": "barrier_cleanse",
+      "coreItems": [
+        "Torment Pulse"
+      ],
+      "abilityMaxPriority": [
+        2,
+        3,
+        1,
+        4
+      ]
+    },
+    "Grey Talon": {
+      "damage": {
+        "weapon": 0.5,
+        "spirit": 0.5,
+        "melee": 0
+      },
+      "affinity": {
+        "spirit_power": 0.7,
+        "weapon_damage": 0.6,
+        "cooldown": 0.6,
+        "weapon_range": 0.5,
+        "fire_rate": 0.4,
+        "ammo": 0.3
+      },
+      "notes": {
+        "spirit_power": "Charged Shot and Guided Owl scale with spirit",
+        "weapon_damage": "Rain of Arrows gives weapon damage and multishot",
+        "weapon_range": "long-range marksman"
+      },
+      "summary": "Long-range marksman, works with gun or spirit.",
+      "imbue": {
+        "damage": "Charged Shot",
+        "cooldown": "Guided Owl",
+        "cooldown_non_ult": "Spirit Snare",
+        "duration": "Rain of Arrows",
+        "range": "Charged Shot",
+        "charges": "Charged Shot",
+        "frequent": "Charged Shot"
+      },
+      "primaryInvestment": "weapon",
+      "antiHealDelivery": "hybrid",
+      "coreItems": [
+        "Compress Cooldown",
+        "Improved Spirit",
+        "Opening Rounds"
+      ],
+      "abilityMaxPriority": [
+        2,
+        1,
+        4,
+        3
+      ],
+      "survival": "barrier_cleanse"
+    },
+    "Haze": {
+      "defaultArchetype": "gun_carry",
+      "archetypes": {
+        "gun_carry": {
+          "name": "Gun Carry",
+          "damage": {
+            "weapon": 0.85,
+            "spirit": 0.15,
+            "melee": 0
+          },
+          "affinity": {
+            "fire_rate": 0.9,
+            "weapon_damage": 0.8,
+            "ammo": 0.8,
+            "bullet_lifesteal": 0.7,
+            "duration": 0.5,
+            "cooldown": 0.4,
+            "mobility": 0.3,
+            "spirit_power": 0.2
+          },
+          "notes": {
+            "fire_rate": "Bullet Dance fires your gun; the upgrade gives +10% fire rate",
+            "weapon_damage": "Fixation: every bullet that hits increases damage on the target",
+            "ammo": "a 25-round mag at 9.5 shots/s runs out fast",
+            "bullet_lifesteal": "Smoke Bomb gives bullet lifesteal with the upgrade"
+          },
+          "summary": "Gun assassin: almost all the damage comes from bullets.",
+          "imbue": {
+            "damage": "Sleep Dagger",
+            "cooldown": "Bullet Dance",
+            "cooldown_non_ult": "Sleep Dagger",
+            "duration": "Bullet Dance",
+            "range": "Bullet Dance",
+            "charges": "Smoke Bomb",
+            "frequent": "Sleep Dagger"
+          },
+          "coreItems": [
+            "Active Reload",
+            "Swift Striker",
+            "Surge of Power"
+          ],
+          "abilityMaxPriority": [
+            1,
+            2,
+            3,
+            4
+          ],
+          "innate": {
+            "cleanse": {
+              "ability": "Smoke Bomb",
+              "tier": 3
+            }
+          },
+          "primaryInvestment": "weapon",
+          "antiHealDelivery": "gun",
+          "survival": "barrier_cleanse"
+        },
+        "spirit_dagger": {
+          "name": "Spirit Dagger / Assassin",
+          "summary": "Sleep Dagger and Smoke Bomb to catch isolated targets; the damage comes from spirit and a short Bullet Dance.",
+          "damage": {
+            "weapon": 0.4,
+            "spirit": 0.6,
+            "melee": 0
+          },
+          "affinity": {
+            "spirit_power": 0.85,
+            "cooldown": 0.7,
+            "duration": 0.5,
+            "charges": 0.5,
+            "fire_rate": 0.4,
+            "range": 0.3
+          },
+          "notes": {
+            "spirit_power": "Sleep Dagger scales with spirit and opens the combo",
+            "cooldown": "more Sleep Daggers per fight",
+            "charges": "Smoke Bomb gains charges at T2"
+          },
+          "imbue": {
+            "damage": "Sleep Dagger",
+            "cooldown": "Bullet Dance",
+            "cooldown_non_ult": "Smoke Bomb",
+            "duration": "Bullet Dance",
+            "range": "Bullet Dance",
+            "charges": "Smoke Bomb",
+            "frequent": "Sleep Dagger"
+          },
+          "coreItems": [
+            "Rapid Recharge"
+          ],
+          "abilityMaxPriority": [
+            1,
+            2,
+            3,
+            4
+          ],
+          "innate": {
+            "cleanse": {
+              "ability": "Smoke Bomb",
+              "tier": 3
+            }
+          },
+          "primaryInvestment": "spirit",
+          "antiHealDelivery": "spirit",
+          "survival": "barrier_cleanse"
+        }
+      }
+    },
+    "Holliday": {
+      "defaultArchetype": "keg_spirit",
+      "archetypes": {
+        "keg_spirit": {
+          "name": "Spirit / Powder Keg and Crackshot",
+          "summary": "Spirit burst: Crackshot (1.116×) and Spirit Lasso (0.93×) with spirit, kegs on charges.",
+          "damage": {
+            "weapon": 0.35,
+            "spirit": 0.65,
+            "melee": 0
+          },
+          "affinity": {
+            "spirit_power": 0.8,
+            "cooldown": 0.6,
+            "charges": 0.5,
+            "range": 0.4,
+            "mobility": 0.4,
+            "weapon_damage": 0.3
+          },
+          "notes": {
+            "spirit_power": "Crackshot scales 1.116× and Spirit Lasso 0.93× with spirit",
+            "charges": "Powder Keg has charges",
+            "mobility": "Bounce Pad gets you to the keg angle"
+          },
+          "imbue": {
+            "damage": "Powder Keg",
+            "cooldown": "Spirit Lasso",
+            "cooldown_non_ult": "Bounce Pad",
+            "duration": "Powder Keg",
+            "range": "Powder Keg",
+            "charges": "Powder Keg",
+            "frequent": "Powder Keg"
+          },
+          "primaryInvestment": "spirit",
+          "antiHealDelivery": "spirit",
+          "survival": "barrier_cleanse",
+          "coreItems": [
+            "Rapid Recharge",
+            "Improved Spirit",
+            "Healbane"
+          ],
+          "abilityMaxPriority": [
+            1,
+            4,
+            2,
+            3
+          ]
+        },
+        "rifle_gun": {
+          "name": "Gun / Precision shooting",
+          "summary": "Precision shooter: weapon damage, range and headshots; the kit opens the fight.",
+          "damage": {
+            "weapon": 0.75,
+            "spirit": 0.25,
+            "melee": 0
+          },
+          "affinity": {
+            "weapon_damage": 0.9,
+            "weapon_range": 0.6,
+            "ammo": 0.5,
+            "fire_rate": 0.4,
+            "mobility": 0.4,
+            "cooldown": 0.3
+          },
+          "notes": {
+            "weapon_damage": "gun builds go Headhunter and Long Range",
+            "weapon_range": "shoots from long range",
+            "mobility": "Bounce Pad opens shooting angles"
+          },
+          "imbue": {
+            "damage": "Powder Keg",
+            "cooldown": "Spirit Lasso",
+            "cooldown_non_ult": "Bounce Pad",
+            "duration": "Spirit Lasso",
+            "range": "Powder Keg",
+            "charges": "Powder Keg",
+            "frequent": "Powder Keg"
+          },
+          "primaryInvestment": "weapon",
+          "antiHealDelivery": "gun",
+          "survival": "barrier_cleanse",
+          "coreItems": [
+            "Long Range",
+            "Headhunter",
+            "Bullet Resist Shredder"
+          ],
+          "abilityMaxPriority": [
+            1,
+            4,
+            2,
+            3
+          ]
+        }
+      }
+    },
+    "Infernus": {
+      "defaultArchetype": "afterburn_hybrid",
+      "archetypes": {
+        "afterburn_hybrid": {
+          "name": "Hybrid Afterburn",
+          "damage": {
+            "weapon": 0.45,
+            "spirit": 0.55,
+            "melee": 0
+          },
+          "affinity": {
+            "fire_rate": 0.7,
+            "spirit_power": 0.7,
+            "duration": 0.6,
+            "cooldown": 0.5,
+            "ammo": 0.5,
+            "spirit_lifesteal": 0.4,
+            "bullet_lifesteal": 0.3
+          },
+          "notes": {
+            "fire_rate": "Afterburn: every bullet hit stacks the burn",
+            "spirit_power": "the burn and Napalm deal spirit damage",
+            "duration": "Afterburn and the Flame Dash trail last longer"
+          },
+          "summary": "Sustained damage: bullets apply a spirit burn.",
+          "imbue": {
+            "damage": "Napalm",
+            "cooldown": "Concussive Combustion",
+            "cooldown_non_ult": "Flame Dash",
+            "duration": "Afterburn",
+            "range": "Concussive Combustion",
+            "charges": "Napalm",
+            "frequent": "Napalm"
+          },
+          "coreItems": [
+            "Improved Spirit",
+            "Titanic Magazine",
+            "Healbane"
+          ],
+          "abilityMaxPriority": [
+            3,
+            1,
+            2,
+            4
+          ],
+          "innate": {
+            "antiHeal": {
+              "ability": "Napalm",
+              "tier": 3
+            }
+          },
+          "primaryInvestment": "spirit",
+          "antiHealDelivery": "spirit",
+          "survival": "resist_hp"
+        },
+        "spirit_napalm": {
+          "name": "Spirit / Napalm",
+          "summary": "Napalm and Concussive Combustion as the main damage; Flame Dash to get in and out.",
+          "damage": {
+            "weapon": 0.25,
+            "spirit": 0.75,
+            "melee": 0
+          },
+          "affinity": {
+            "spirit_power": 0.9,
+            "cooldown": 0.7,
+            "duration": 0.6,
+            "range": 0.6,
+            "spirit_lifesteal": 0.4,
+            "charges": 0.3
+          },
+          "notes": {
+            "spirit_power": "Napalm and the ult scale with spirit",
+            "cooldown": "Napalm and Flame Dash more often per fight",
+            "range": "Napalm and the ult hit the whole team"
+          },
+          "imbue": {
+            "damage": "Napalm",
+            "cooldown": "Concussive Combustion",
+            "cooldown_non_ult": "Flame Dash",
+            "duration": "Afterburn",
+            "range": "Concussive Combustion",
+            "charges": "Napalm",
+            "frequent": "Napalm"
+          },
+          "coreItems": [
+            "Compress Cooldown",
+            "Improved Spirit"
+          ],
+          "abilityMaxPriority": [
+            3,
+            1,
+            2,
+            4
+          ],
+          "innate": {
+            "antiHeal": {
+              "ability": "Napalm",
+              "tier": 3
+            }
+          },
+          "primaryInvestment": "spirit",
+          "antiHealDelivery": "spirit",
+          "survival": "resist_hp"
+        }
+      }
+    },
+    "Ivy": {
+      "defaultArchetype": "kudzu_gun",
+      "archetypes": {
+        "thorns_spirit": {
+          "name": "Spirit / Entangling Thorns",
+          "summary": "Spirit support: Entangling Thorns and Air Drop (0.7× spirit) control the area.",
+          "damage": {
+            "weapon": 0.35,
+            "spirit": 0.65,
+            "melee": 0
+          },
+          "affinity": {
+            "spirit_power": 0.8,
+            "cooldown": 0.6,
+            "duration": 0.5,
+            "range": 0.4,
+            "charges": 0.4,
+            "health": 0.3,
+            "healing_power": 0.3
+          },
+          "notes": {
+            "spirit_power": "Entangling Thorns 0.55×, Stone Form 0.6× and Air Drop 0.7× with spirit",
+            "charges": "Entangling Thorns gains a charge at T1",
+            "range": "Entangling Thorns covers more area"
+          },
+          "imbue": {
+            "damage": "Entangling Thorns",
+            "cooldown": "Stone Form",
+            "cooldown_non_ult": "Stone Form",
+            "duration": "Stone Form",
+            "range": "Entangling Thorns",
+            "charges": "Entangling Thorns",
+            "frequent": "Entangling Thorns"
+          },
+          "primaryInvestment": "spirit",
+          "antiHealDelivery": "spirit",
+          "survival": "barrier_cleanse",
+          "coreItems": [
+            "Mystic Slow"
+          ],
+          "abilityMaxPriority": [
+            2,
+            4,
+            3,
+            1
+          ]
+        },
+        "kudzu_gun": {
+          "name": "Gun / Kudzu Connection",
+          "summary": "Gun carry: Kudzu Connection gives fire rate and bullet lifesteal to her and the ally.",
+          "damage": {
+            "weapon": 0.7,
+            "spirit": 0.3,
+            "melee": 0
+          },
+          "affinity": {
+            "fire_rate": 0.8,
+            "weapon_damage": 0.7,
+            "ammo": 0.6,
+            "bullet_lifesteal": 0.5,
+            "duration": 0.4,
+            "cooldown": 0.4,
+            "health": 0.3
+          },
+          "notes": {
+            "fire_rate": "Kudzu Connection adds fire rate (scales with spirit)",
+            "bullet_lifesteal": "Kudzu Connection gives bullet lifesteal and shares the healing",
+            "ammo": "gun builds finish the magazine early (Titanic Magazine)"
+          },
+          "imbue": {
+            "damage": "Entangling Thorns",
+            "cooldown": "Air Drop",
+            "cooldown_non_ult": "Stone Form",
+            "duration": "Air Drop",
+            "range": "Air Drop",
+            "charges": "Entangling Thorns",
+            "frequent": "Entangling Thorns"
+          },
+          "primaryInvestment": "weapon",
+          "antiHealDelivery": "gun",
+          "survival": "barrier_cleanse",
+          "coreItems": [
+            "Titanic Magazine",
+            "Tesla Bullets",
+            "Active Reload"
+          ],
+          "abilityMaxPriority": [
+            2,
+            4,
+            3,
+            1
+          ]
+        }
+      }
+    },
+    "Kelvin": {
+      "defaultArchetype": "beam_spirit",
+      "archetypes": {
+        "beam_spirit": {
+          "name": "Spirit / Arctic Beam",
+          "summary": "Spirit damage: a sustained Arctic Beam and Frost Grenade charges, Ice Path to get in and out.",
+          "damage": {
+            "weapon": 0.25,
+            "spirit": 0.75,
+            "melee": 0
+          },
+          "affinity": {
+            "spirit_power": 0.85,
+            "duration": 0.7,
+            "cooldown": 0.6,
+            "charges": 0.5,
+            "range": 0.4,
+            "health": 0.4,
+            "mobility": 0.3
+          },
+          "notes": {
+            "spirit_power": "Frost Grenade (0.6×) and Arctic Beam (0.38×/s) scale with spirit",
+            "duration": "Arctic Beam lasts 5s and slows harder the longer it stays on target",
+            "charges": "Frost Grenade has 2 charges"
+          },
+          "imbue": {
+            "damage": "Frost Grenade",
+            "cooldown": "Ice Path",
+            "cooldown_non_ult": "Ice Path",
+            "duration": "Arctic Beam",
+            "range": "Arctic Beam",
+            "charges": "Frost Grenade",
+            "frequent": "Arctic Beam"
+          },
+          "innate": {
+            "cleanse": {
+              "ability": "Frozen Shelter",
+              "tier": 3
+            }
+          },
+          "primaryInvestment": "spirit",
+          "antiHealDelivery": "spirit",
+          "survival": "resist_hp",
+          "coreItems": [
+            "Arcane Surge",
+            "Healbane",
+            "Torment Pulse"
+          ],
+          "abilityMaxPriority": [
+            1,
+            3,
+            2,
+            4
+          ]
+        },
+        "support_grenade": {
+          "name": "Support / Frost Grenade and Frozen Shelter",
+          "summary": "Healing support: Frost Grenade and Frozen Shelter heal with spirit; healing and protection items for the team.",
+          "damage": {
+            "weapon": 0.3,
+            "spirit": 0.7,
+            "melee": 0
+          },
+          "affinity": {
+            "healing_power": 0.9,
+            "cooldown": 0.7,
+            "charges": 0.6,
+            "health": 0.6,
+            "duration": 0.5,
+            "spirit_power": 0.5,
+            "range": 0.4
+          },
+          "notes": {
+            "healing_power": "Frost Grenade (0.8×) and Frozen Shelter heal allies",
+            "charges": "Frost Grenade has 2 charges",
+            "cooldown": "Frozen Shelter (190s) and Frost Grenade on rotation"
+          },
+          "imbue": {
+            "damage": "Arctic Beam",
+            "cooldown": "Frozen Shelter",
+            "cooldown_non_ult": "Ice Path",
+            "duration": "Arctic Beam",
+            "range": "Frost Grenade",
+            "charges": "Frost Grenade",
+            "frequent": "Frost Grenade"
+          },
+          "innate": {
+            "cleanse": {
+              "ability": "Frozen Shelter",
+              "tier": 3
+            }
+          },
+          "primaryInvestment": "vitality",
+          "antiHealDelivery": "spirit",
+          "survival": "resist_hp",
+          "coreItems": [
+            "Improved Spirit",
+            "Healing Booster"
+          ],
+          "abilityMaxPriority": [
+            1,
+            3,
+            2,
+            4
+          ]
+        }
+      }
+    },
+    "Lady Geist": {
+      "defaultArchetype": "bomb_spirit",
+      "archetypes": {
+        "bomb_spirit": {
+          "name": "Spirit / Essence Bomb",
+          "summary": "Caster that trades health for damage: Essence Bomb (1.35× spirit) and Malice.",
+          "damage": {
+            "weapon": 0.2,
+            "spirit": 0.8,
+            "melee": 0
+          },
+          "affinity": {
+            "spirit_power": 0.9,
+            "spirit_lifesteal": 0.8,
+            "health": 0.7,
+            "cooldown": 0.6,
+            "charges": 0.4,
+            "duration": 0.4,
+            "range": 0.3
+          },
+          "notes": {
+            "spirit_power": "Essence Bomb scales 1.35× and Malice 0.56× with spirit",
+            "spirit_lifesteal": "pays for abilities with health and recovers through damage",
+            "health": "Essence Bomb and Malice cost health"
+          },
+          "imbue": {
+            "damage": "Essence Bomb",
+            "cooldown": "Essence Bomb",
+            "cooldown_non_ult": "Essence Bomb",
+            "duration": "Life Drain",
+            "range": "Essence Bomb",
+            "charges": "Life Drain",
+            "frequent": "Essence Bomb"
+          },
+          "primaryInvestment": "spirit",
+          "antiHealDelivery": "spirit",
+          "coreItems": [
+            "Spirit Lifesteal",
+            "Radiant Regeneration",
+            "Improved Spirit"
+          ],
+          "abilityMaxPriority": [
+            1,
+            3,
+            2,
+            4
+          ],
+          "survival": "resist_hp"
+        },
+        "drain_gun": {
+          "name": "Gun / Life Drain",
+          "summary": "Durable shooter: the gun deals the damage while Life Drain and health hold the trade.",
+          "damage": {
+            "weapon": 0.6,
+            "spirit": 0.4,
+            "melee": 0
+          },
+          "affinity": {
+            "weapon_damage": 0.7,
+            "health": 0.7,
+            "fire_rate": 0.6,
+            "ammo": 0.5,
+            "bullet_lifesteal": 0.5,
+            "spirit_power": 0.4,
+            "charges": 0.3
+          },
+          "notes": {
+            "health": "Life Drain and the extra health hold the trade",
+            "charges": "Life Drain gains charges at T3",
+            "bullet_lifesteal": "heals while shooting"
+          },
+          "imbue": {
+            "damage": "Essence Bomb",
+            "cooldown": "Essence Bomb",
+            "cooldown_non_ult": "Essence Bomb",
+            "duration": "Life Drain",
+            "range": "Essence Bomb",
+            "charges": "Life Drain",
+            "frequent": "Life Drain"
+          },
+          "primaryInvestment": "weapon",
+          "antiHealDelivery": "hybrid",
+          "coreItems": [
+            "Radiant Regeneration",
+            "Kinetic Dash",
+            "Healing Booster"
+          ],
+          "abilityMaxPriority": [
+            1,
+            3,
+            2,
+            4
+          ],
+          "survival": "resist_hp"
+        }
+      }
+    },
+    "Lash": {
+      "damage": {
+        "weapon": 0.4,
+        "spirit": 0.55,
+        "melee": 0.05
+      },
+      "affinity": {
+        "spirit_power": 0.7,
+        "cooldown": 0.7,
+        "mobility": 0.6,
+        "range": 0.5,
+        "weapon_damage": 0.4,
+        "health": 0.4,
+        "spirit_lifesteal": 0.3
+      },
+      "notes": {
+        "cooldown": "Grapple (35s) → Ground Strike (18s) → Flog rotation",
+        "spirit_power": "Ground Strike, Flog and Death Slam scale with spirit",
+        "range": "Death Slam and Grapple depend on range"
+      },
+      "summary": "Spirit air initiator.",
+      "imbue": {
+        "damage": "Ground Strike",
+        "cooldown": "Death Slam",
+        "cooldown_non_ult": "Grapple",
+        "duration": "Death Slam",
+        "range": "Death Slam",
+        "charges": "Grapple",
+        "frequent": "Flog"
+      },
+      "primaryInvestment": "spirit",
+      "antiHealDelivery": "spirit",
+      "coreItems": [
+        "Improved Spirit",
+        "Quicksilver Reload"
+      ],
+      "abilityMaxPriority": [
+        1,
+        3,
+        4,
+        2
+      ],
+      "survival": "resist_hp"
+    },
+    "McGinnis": {
+      "defaultArchetype": "turret_spirit",
+      "archetypes": {
+        "turret_spirit": {
+          "name": "Spirit / Mini Turret",
+          "summary": "Area control with turrets.",
+          "damage": {
+            "weapon": 0.4,
+            "spirit": 0.6,
+            "melee": 0
+          },
+          "affinity": {
+            "spirit_power": 0.7,
+            "cooldown": 0.7,
+            "duration": 0.6,
+            "healing_power": 0.4,
+            "range": 0.4,
+            "weapon_damage": 0.2
+          },
+          "notes": {
+            "spirit_power": "turret damage scales with spirit",
+            "cooldown": "Mini Turret (18s) keeps several turrets on the field",
+            "duration": "turrets, Spectral Wall and Heavy Barrage have durations"
+          },
+          "imbue": {
+            "damage": "Mini Turret",
+            "cooldown": "Mini Turret",
+            "cooldown_non_ult": "Spectral Wall",
+            "duration": "Heavy Barrage",
+            "range": "Heavy Barrage",
+            "charges": "Mini Turret",
+            "frequent": "Mini Turret"
+          },
+          "primaryInvestment": "spirit",
+          "antiHealDelivery": "spirit",
+          "survival": "barrier_cleanse",
+          "coreItems": [
+            "Arcane Surge",
+            "Suppressor"
+          ],
+          "abilityMaxPriority": [
+            1,
+            4,
+            3,
+            2
+          ]
+        },
+        "gun_barrage": {
+          "name": "Gun / Fire rate",
+          "summary": "Fire-rate shooter: a 66-round magazine and gun items; turrets and Spectral Wall give the control.",
+          "damage": {
+            "weapon": 0.75,
+            "spirit": 0.25,
+            "melee": 0
+          },
+          "affinity": {
+            "fire_rate": 0.9,
+            "weapon_damage": 0.8,
+            "ammo": 0.7,
+            "cooldown": 0.4,
+            "duration": 0.3
+          },
+          "notes": {
+            "fire_rate": "gun builds go Swift Striker and Fleetfoot",
+            "ammo": "66-round magazine"
+          },
+          "imbue": {
+            "damage": "Mini Turret",
+            "cooldown": "Medicinal Specter",
+            "cooldown_non_ult": "Spectral Wall",
+            "duration": "Medicinal Specter",
+            "range": "Medicinal Specter",
+            "charges": "Mini Turret",
+            "frequent": "Mini Turret"
+          },
+          "primaryInvestment": "weapon",
+          "antiHealDelivery": "gun",
+          "survival": "barrier_cleanse",
+          "coreItems": [
+            "Fleetfoot",
+            "Intensifying Magazine",
+            "Quicksilver Reload"
+          ],
+          "abilityMaxPriority": [
+            1,
+            4,
+            3,
+            2
+          ]
+        }
+      }
+    },
+    "Mina": {
+      "damage": {
+        "weapon": 0.4,
+        "spirit": 0.6,
+        "melee": 0
+      },
+      "affinity": {
+        "spirit_power": 0.7,
+        "fire_rate": 0.6,
+        "cooldown": 0.6,
+        "mobility": 0.5,
+        "ammo": 0.3,
+        "spirit_lifesteal": 0.3
+      },
+      "notes": {
+        "fire_rate": "Love Bites: every bullet deals extra spirit damage",
+        "spirit_power": "Love Bites, Rake and Nox Nostra scale with spirit",
+        "mobility": "Sanguine Retreat to get in and out"
+      },
+      "summary": "Hybrid harasser: bullets apply spirit.",
+      "imbue": {
+        "damage": "Rake",
+        "cooldown": "Sanguine Retreat",
+        "cooldown_non_ult": "Sanguine Retreat",
+        "range": "Rake",
+        "frequent": "Rake"
+      },
+      "primaryInvestment": "spirit",
+      "antiHealDelivery": "spirit",
+      "survival": "barrier_cleanse",
+      "coreItems": [
+        "Quicksilver Reload"
+      ],
+      "abilityMaxPriority": [
+        1,
+        2,
+        3,
+        4
+      ]
+    },
+    "Mirage": {
+      "damage": {
+        "weapon": 0.6,
+        "spirit": 0.4,
+        "melee": 0
+      },
+      "affinity": {
+        "fire_rate": 0.7,
+        "weapon_damage": 0.6,
+        "spirit_power": 0.5,
+        "ammo": 0.4,
+        "cooldown": 0.4,
+        "charges": 0.4,
+        "spirit_lifesteal": 0.3,
+        "mobility": 0.3
+      },
+      "notes": {
+        "fire_rate": "Djinn's Mark stacks marks with every shot",
+        "weapon_damage": "shots with Djinn's Mark are the main damage source",
+        "charges": "Fire Scarabs has 2 charges"
+      },
+      "summary": "Shooter who stacks marks for burst.",
+      "imbue": {
+        "damage": "Djinn's Mark",
+        "cooldown": "Djinn's Mark",
+        "cooldown_non_ult": "Dust Devil",
+        "duration": "Fire Scarabs",
+        "range": "Dust Devil",
+        "charges": "Fire Scarabs",
+        "frequent": "Djinn's Mark"
+      },
+      "primaryInvestment": "weapon",
+      "antiHealDelivery": "hybrid",
+      "survival": "barrier_cleanse",
+      "coreItems": [
+        "Healbane",
+        "Mystic Vulnerability",
+        "Suppressor"
+      ],
+      "abilityMaxPriority": [
+        3,
+        1,
+        2,
+        4
+      ]
+    },
+    "Mo & Krill": {
+      "damage": {
+        "weapon": 0.35,
+        "spirit": 0.55,
+        "melee": 0.1
+      },
+      "affinity": {
+        "health": 0.8,
+        "spirit_power": 0.7,
+        "cooldown": 0.7,
+        "duration": 0.5,
+        "range": 0.4,
+        "spirit_lifesteal": 0.4,
+        "mobility": 0.3
+      },
+      "notes": {
+        "health": "initiates from underground and holds the target with Combo",
+        "cooldown": "Scorn (13s) heals and deals damage on a short rotation",
+        "spirit_power": "Scorn and Burrow (1.5×) scale with spirit"
+      },
+      "summary": "Spirit initiator tank.",
+      "imbue": {
+        "damage": "Burrow",
+        "cooldown": "Scorn",
+        "cooldown_non_ult": "Sand Blast",
+        "duration": "Combo",
+        "range": "Scorn",
+        "frequent": "Scorn"
+      },
+      "primaryInvestment": "spirit",
+      "antiHealDelivery": "spirit",
+      "survival": "resist_hp",
+      "coreItems": [
+        "Quicksilver Reload",
+        "Torment Pulse",
+        "Cold Front"
+      ],
+      "abilityMaxPriority": [
+        2,
+        1,
+        4,
+        3
+      ]
+    },
+    "Nurse Harrow": {
+      "damage": {
+        "weapon": 0.55,
+        "spirit": 0.45,
+        "melee": 0
+      },
+      "affinity": {
+        "healing_power": 0.9,
+        "ammo": 0.7,
+        "cooldown": 0.6,
+        "fire_rate": 0.5,
+        "spirit_power": 0.5,
+        "duration": 0.5,
+        "charges": 0.4,
+        "weapon_damage": 0.4,
+        "mobility": 0.3
+      },
+      "notes": {
+        "healing_power": "Healing Needles heal allies with every shot (scales with spirit)",
+        "ammo": "Healing Needles load a full magazine of syringes",
+        "cooldown": "Wretched Vapors (40s) and Lurking Terrors (200s) come back faster",
+        "duration": "Wretched Vapors and the buffs the syringes extend last longer",
+        "charges": "Healing Needles gains an extra charge at T1"
+      },
+      "summary": "Gun healing support: Healing Needles heal allies, Leech Therapy drains and Lurking Terrors locks down whoever looks at her.",
+      "imbue": {
+        "damage": "Leech Therapy",
+        "cooldown": "Lurking Terrors",
+        "cooldown_non_ult": "Wretched Vapors",
+        "duration": "Wretched Vapors",
+        "range": "Lurking Terrors",
+        "charges": "Healing Needles",
+        "frequent": "Leech Therapy"
+      },
+      "primaryInvestment": "weapon",
+      "antiHealDelivery": "hybrid",
+      "survival": "barrier_cleanse",
+      "innate": {
+        "cleanse": {
+          "ability": "Wretched Vapors",
+          "tier": 3
+        }
+      },
+      "coreItems": [
+        "Titanic Magazine",
+        "Healing Booster",
+        "Kinetic Dash"
+      ],
+      "abilityMaxPriority": [
+        4,
+        1,
+        3,
+        2
+      ]
+    },
+    "Paige": {
+      "defaultArchetype": "support_barrier",
+      "archetypes": {
+        "support_barrier": {
+          "name": "Support / Plot Armor",
+          "summary": "Barrier and healing support: Plot Armor (1.5×) shields allies and Rallying Charge heals the team across the map.",
+          "damage": {
+            "weapon": 0.3,
+            "spirit": 0.7,
+            "melee": 0
+          },
+          "affinity": {
+            "healing_power": 0.8,
+            "cooldown": 0.7,
+            "health": 0.6,
+            "spirit_power": 0.6,
+            "duration": 0.5,
+            "range": 0.5
+          },
+          "notes": {
+            "spirit_power": "Plot Armor (1.5×) and Bookwyrm scale with spirit",
+            "healing_power": "Rallying Charge heals allies across the map",
+            "cooldown": "Bookwyrm and Plot Armor on rotation"
+          },
+          "imbue": {
+            "damage": "Bookwyrm",
+            "cooldown": "Plot Armor",
+            "cooldown_non_ult": "Plot Armor",
+            "duration": "Captivating Read",
+            "range": "Captivating Read",
+            "charges": "Bookwyrm",
+            "frequent": "Bookwyrm"
+          },
+          "primaryInvestment": "vitality",
+          "antiHealDelivery": "spirit",
+          "survival": "barrier_cleanse",
+          "coreItems": [
+            "Guardian Ward"
+          ],
+          "abilityMaxPriority": [
+            1,
+            2,
+            3,
+            4
+          ]
+        },
+        "bookwyrm_spirit": {
+          "name": "Spirit / Bookwyrm",
+          "summary": "Spirit damage: Bookwyrm and Captivating Read (1.3× each) on rotation; Bookwyrm gains charges at T2.",
+          "damage": {
+            "weapon": 0.25,
+            "spirit": 0.75,
+            "melee": 0
+          },
+          "affinity": {
+            "spirit_power": 0.9,
+            "cooldown": 0.7,
+            "charges": 0.5,
+            "range": 0.5,
+            "duration": 0.4
+          },
+          "notes": {
+            "spirit_power": "Bookwyrm and Captivating Read scale 1.3× with spirit",
+            "charges": "Bookwyrm gains charges at T2",
+            "cooldown": "Bookwyrm and Captivating Read on rotation"
+          },
+          "imbue": {
+            "damage": "Bookwyrm",
+            "cooldown": "Bookwyrm",
+            "cooldown_non_ult": "Bookwyrm",
+            "duration": "Bookwyrm",
+            "range": "Captivating Read",
+            "charges": "Bookwyrm",
+            "frequent": "Bookwyrm"
+          },
+          "primaryInvestment": "spirit",
+          "antiHealDelivery": "spirit",
+          "survival": "barrier_cleanse",
+          "coreItems": [
+            "Improved Spirit",
+            "Rapid Recharge"
+          ],
+          "abilityMaxPriority": [
+            1,
+            2,
+            3,
+            4
+          ]
+        }
+      }
+    },
+    "Paradox": {
+      "defaultArchetype": "carbine_gun",
+      "archetypes": {
+        "carbine_gun": {
+          "name": "Gun / Kinetic Carbine",
+          "summary": "Long-range shooter: Kinetic Carbine scales with weapon damage and the rest of the kit holds the fight.",
+          "damage": {
+            "weapon": 0.75,
+            "spirit": 0.25,
+            "melee": 0
+          },
+          "affinity": {
+            "weapon_damage": 0.9,
+            "weapon_range": 0.6,
+            "fire_rate": 0.5,
+            "ammo": 0.4,
+            "cooldown": 0.4,
+            "spirit_power": 0.2
+          },
+          "notes": {
+            "weapon_damage": "Kinetic Carbine's bonus shot damage scales with bonus weapon damage",
+            "weapon_range": "plays from range with the Carbine and the rifle",
+            "cooldown": "more Kinetic Carbine shots per fight"
+          },
+          "imbue": {
+            "damage": "Kinetic Carbine",
+            "cooldown": "Kinetic Carbine",
+            "cooldown_non_ult": "Pulse Grenade",
+            "duration": "Pulse Grenade",
+            "range": "Pulse Grenade",
+            "charges": "Time Wall",
+            "frequent": "Kinetic Carbine"
+          },
+          "primaryInvestment": "weapon",
+          "antiHealDelivery": "gun",
+          "survival": "barrier_cleanse",
+          "coreItems": [
+            "Sharpshooter",
+            "Opening Rounds",
+            "Long Range"
+          ],
+          "abilityMaxPriority": [
+            3,
+            4,
+            2,
+            1
+          ]
+        },
+        "swap_spirit": {
+          "name": "Spirit / Pulse Grenade",
+          "summary": "Control caster: Pulse Grenade, Time Wall and the Swap (1.1× spirit) decide the fight.",
+          "damage": {
+            "weapon": 0.3,
+            "spirit": 0.7,
+            "melee": 0
+          },
+          "affinity": {
+            "spirit_power": 0.9,
+            "cooldown": 0.7,
+            "duration": 0.5,
+            "range": 0.4,
+            "charges": 0.3,
+            "weapon_damage": 0.2
+          },
+          "notes": {
+            "spirit_power": "Paradoxical Swap scales 1.1× and Pulse Grenade 0.3× with spirit",
+            "cooldown": "more grenades and Time Walls per fight",
+            "duration": "Time Wall holds for longer"
+          },
+          "imbue": {
+            "damage": "Kinetic Carbine",
+            "cooldown": "Pulse Grenade",
+            "cooldown_non_ult": "Pulse Grenade",
+            "duration": "Pulse Grenade",
+            "range": "Pulse Grenade",
+            "charges": "Time Wall",
+            "frequent": "Kinetic Carbine"
+          },
+          "primaryInvestment": "spirit",
+          "antiHealDelivery": "spirit",
+          "survival": "barrier_cleanse",
+          "coreItems": [
+            "Stamina Mastery"
+          ],
+          "abilityMaxPriority": [
+            3,
+            4,
+            2,
+            1
+          ]
+        }
+      }
+    },
+    "Pocket": {
+      "defaultArchetype": "spirit_burst",
+      "archetypes": {
+        "spirit_burst": {
+          "name": "Spirit Burst",
+          "damage": {
+            "weapon": 0.35,
+            "spirit": 0.65,
+            "melee": 0
+          },
+          "affinity": {
+            "spirit_power": 0.8,
+            "cooldown": 0.7,
+            "mobility": 0.4,
+            "duration": 0.4,
+            "range": 0.4,
+            "weapon_damage": 0.3,
+            "health": 0.3
+          },
+          "notes": {
+            "spirit_power": "Flying Cloak (1.3×) and Enchanter's Satchel (1.1×) scale with spirit",
+            "cooldown": "Satchel (17s) and Cloak (26s) are escape and damage",
+            "range": "Affliction and Barrage hit an area"
+          },
+          "summary": "Spirit burst with escapes.",
+          "imbue": {
+            "damage": "Flying Cloak",
+            "cooldown": "Flying Cloak",
+            "cooldown_non_ult": "Enchanter's Satchel",
+            "duration": "Flying Cloak",
+            "range": "Barrage",
+            "frequent": "Flying Cloak"
+          },
+          "coreItems": [
+            "Compress Cooldown"
+          ],
+          "abilityMaxPriority": [
+            2,
+            4,
+            3,
+            1
+          ],
+          "innate": {
+            "noItemProcs": [
+              "Affliction"
+            ],
+            "antiHeal": {
+              "ability": "Affliction",
+              "tier": 3
+            }
+          },
+          "primaryInvestment": "spirit",
+          "antiHealDelivery": "spirit",
+          "survival": "barrier_cleanse"
+        },
+        "gun_pocket": {
+          "name": "Close-Range Gun / Satchel",
+          "summary": "Short-range shotgun with Satchel and Flying Cloak to get in and out.",
+          "damage": {
+            "weapon": 0.7,
+            "spirit": 0.3,
+            "melee": 0
+          },
+          "affinity": {
+            "weapon_damage": 0.8,
+            "fire_rate": 0.6,
+            "ammo": 0.6,
+            "mobility": 0.5,
+            "cooldown": 0.5,
+            "bullet_lifesteal": 0.5
+          },
+          "notes": {
+            "weapon_damage": "the gun does more up close, after Flying Cloak",
+            "mobility": "gets in and out of trades with the Satchel"
+          },
+          "imbue": {
+            "damage": "Flying Cloak",
+            "cooldown": "Flying Cloak",
+            "cooldown_non_ult": "Enchanter's Satchel",
+            "duration": "Flying Cloak",
+            "range": "Barrage",
+            "frequent": "Enchanter's Satchel"
+          },
+          "abilityMaxPriority": [
+            2,
+            4,
+            3,
+            1
+          ],
+          "innate": {
+            "noItemProcs": [
+              "Affliction"
+            ],
+            "antiHeal": {
+              "ability": "Affliction",
+              "tier": 3
+            }
+          },
+          "primaryInvestment": "weapon",
+          "antiHealDelivery": "gun",
+          "survival": "barrier_cleanse",
+          "coreItems": [
+            "Swift Striker",
+            "Cultist Sacrifice"
+          ]
+        }
+      }
+    },
+    "Rat King": {
+      "damage": {
+        "weapon": 0.65,
+        "spirit": 0.35,
+        "melee": 0
+      },
+      "affinity": {
+        "weapon_damage": 0.8,
+        "health": 0.6,
+        "fire_rate": 0.5,
+        "cooldown": 0.5,
+        "ammo": 0.4,
+        "duration": 0.3
+      },
+      "notes": {
+        "weapon_damage": "Scrap Grenade and the ult scale with weapon damage",
+        "health": "Royal Pestments gives a barrier proportional to max health"
+      },
+      "summary": "Durable shooter: even the abilities scale with the gun.",
+      "imbue": {
+        "damage": "Scrap Grenade",
+        "cooldown": "Royal Pestments",
+        "cooldown_non_ult": "Scrap Grenade",
+        "duration": "Rule, Ratannia!",
+        "range": "Scrap Grenade",
+        "charges": "Rat Swarm",
+        "frequent": "Rat Swarm"
+      },
+      "primaryInvestment": "weapon",
+      "antiHealDelivery": "hybrid",
+      "coreItems": [
+        "Opening Rounds",
+        "Cultist Sacrifice",
+        "Swift Striker"
+      ],
+      "abilityMaxPriority": [
+        4,
+        3,
+        1,
+        2
+      ],
+      "survival": "resist_hp"
+    },
+    "Rem": {
+      "damage": {
+        "weapon": 0.35,
+        "spirit": 0.65,
+        "melee": 0
+      },
+      "affinity": {
+        "spirit_power": 0.7,
+        "cooldown": 0.7,
+        "healing_power": 0.6,
+        "duration": 0.4,
+        "range": 0.4,
+        "weapon_damage": 0.3
+      },
+      "notes": {
+        "cooldown": "Pillow Toss reduces the cooldown of the other abilities",
+        "healing_power": "Tag Along heals you and the ally",
+        "spirit_power": "Pillow Toss and Naptime (1.6×) scale with spirit"
+      },
+      "summary": "Healing and control support.",
+      "imbue": {
+        "damage": "Pillow Toss",
+        "cooldown": "Pillow Toss",
+        "cooldown_non_ult": "Tag Along",
+        "duration": "Tag Along",
+        "range": "Pillow Toss",
+        "charges": "Pillow Toss",
+        "frequent": "Pillow Toss"
+      },
+      "innate": {
+        "unstoppable": {
+          "ability": "Naptime",
+          "tier": 3
+        }
+      },
+      "primaryInvestment": "spirit",
+      "antiHealDelivery": "spirit",
+      "survival": "barrier_cleanse",
+      "coreItems": [
+        "Improved Spirit"
+      ],
+      "abilityMaxPriority": [
+        2,
+        3,
+        4,
+        1
+      ]
+    },
+    "Seven": {
+      "defaultArchetype": "spirit_caster",
+      "archetypes": {
+        "spirit_caster": {
+          "name": "Spirit Caster",
+          "damage": {
+            "weapon": 0.4,
+            "spirit": 0.6,
+            "melee": 0
+          },
+          "affinity": {
+            "spirit_power": 0.8,
+            "cooldown": 0.6,
+            "duration": 0.6,
+            "range": 0.5,
+            "fire_rate": 0.4,
+            "health": 0.4,
+            "spirit_lifesteal": 0.4
+          },
+          "notes": {
+            "spirit_power": "Lightning Ball, Static Charge and Storm Cloud scale with spirit",
+            "duration": "Storm Cloud is channeled and Power Surge lasts 10s",
+            "range": "Static Charge and Storm Cloud hit an area"
+          },
+          "summary": "Area caster; Power Surge allows a gun build.",
+          "imbue": {
+            "damage": "Lightning Ball",
+            "cooldown": "Lightning Ball",
+            "cooldown_non_ult": "Static Charge",
+            "duration": "Lightning Ball",
+            "range": "Lightning Ball",
+            "charges": "Lightning Ball",
+            "frequent": "Lightning Ball"
+          },
+          "coreItems": [
+            "Healbane",
+            "Improved Spirit"
+          ],
+          "abilityMaxPriority": [
+            3,
+            4,
+            1,
+            2
+          ],
+          "primaryInvestment": "spirit",
+          "antiHealDelivery": "spirit",
+          "survival": "barrier_cleanse"
+        },
+        "gun_surge": {
+          "name": "Power Surge / Gun",
+          "summary": "Power Surge turns bullets into the main damage; spirit takes a back seat.",
+          "damage": {
+            "weapon": 0.75,
+            "spirit": 0.25,
+            "melee": 0
+          },
+          "affinity": {
+            "fire_rate": 0.85,
+            "weapon_damage": 0.8,
+            "ammo": 0.7,
+            "duration": 0.6,
+            "bullet_lifesteal": 0.6,
+            "cooldown": 0.5
+          },
+          "notes": {
+            "fire_rate": "every bullet with Power Surge deals extra spirit damage",
+            "weapon_damage": "Power Surge multiplies the value of every bullet",
+            "duration": "Power Surge active for longer"
+          },
+          "imbue": {
+            "damage": "Lightning Ball",
+            "cooldown": "Storm Cloud",
+            "cooldown_non_ult": "Static Charge",
+            "duration": "Power Surge",
+            "range": "Lightning Ball",
+            "charges": "Lightning Ball",
+            "frequent": "Lightning Ball"
+          },
+          "abilityMaxPriority": [
+            3,
+            4,
+            1,
+            2
+          ],
+          "primaryInvestment": "weapon",
+          "antiHealDelivery": "gun",
+          "survival": "barrier_cleanse",
+          "coreItems": [
+            "Intensifying Magazine",
+            "Cultist Sacrifice",
+            "Toxic Bullets"
+          ]
+        }
+      }
+    },
+    "Shiv": {
+      "defaultArchetype": "knives_spirit",
+      "archetypes": {
+        "knives_spirit": {
+          "name": "Spirit / Slice and Dice",
+          "summary": "Spirit executioner: Slice and Dice (1.2× spirit) and the knives' bleed set up the Killing Blow.",
+          "damage": {
+            "weapon": 0.3,
+            "spirit": 0.6,
+            "melee": 0.1
+          },
+          "affinity": {
+            "spirit_power": 0.9,
+            "cooldown": 0.6,
+            "charges": 0.5,
+            "health": 0.5,
+            "spirit_lifesteal": 0.4,
+            "duration": 0.3
+          },
+          "notes": {
+            "spirit_power": "Slice and Dice scales 1.2× with spirit, and so does the knives' bleed",
+            "charges": "Serrated Knives has charges",
+            "health": "Bloodletting delays damage: more health, more margin"
+          },
+          "imbue": {
+            "damage": "Slice and Dice",
+            "cooldown": "Slice and Dice",
+            "cooldown_non_ult": "Bloodletting",
+            "duration": "Serrated Knives",
+            "range": "Slice and Dice",
+            "charges": "Serrated Knives",
+            "frequent": "Serrated Knives"
+          },
+          "primaryInvestment": "spirit",
+          "antiHealDelivery": "spirit",
+          "survival": "resist_hp",
+          "coreItems": [
+            "Radiant Regeneration",
+            "Healbane",
+            "Healing Booster"
+          ],
+          "abilityMaxPriority": [
+            1,
+            3,
+            4,
+            2
+          ]
+        },
+        "brawler_gun": {
+          "name": "Gun / Brawler",
+          "summary": "Gun brawler: shotgun, lifesteal and Bloodletting to hold the trade.",
+          "damage": {
+            "weapon": 0.65,
+            "spirit": 0.2,
+            "melee": 0.15
+          },
+          "affinity": {
+            "weapon_damage": 0.8,
+            "bullet_lifesteal": 0.6,
+            "health": 0.6,
+            "fire_rate": 0.5,
+            "melee": 0.3,
+            "mobility": 0.3
+          },
+          "notes": {
+            "weapon_damage": "gun builds go Battle Vest and Bullet Resist Shredder",
+            "bullet_lifesteal": "heals by shooting up close",
+            "health": "Bloodletting delays damage: more health, more margin"
+          },
+          "imbue": {
+            "damage": "Slice and Dice",
+            "cooldown": "Slice and Dice",
+            "cooldown_non_ult": "Bloodletting",
+            "duration": "Serrated Knives",
+            "range": "Slice and Dice",
+            "charges": "Serrated Knives",
+            "frequent": "Serrated Knives"
+          },
+          "primaryInvestment": "weapon",
+          "antiHealDelivery": "gun",
+          "survival": "resist_hp",
+          "coreItems": [
+            "Bullet Resist Shredder",
+            "Radiant Regeneration",
+            "Hunter's Aura"
+          ],
+          "abilityMaxPriority": [
+            1,
+            3,
+            4,
+            2
+          ]
+        }
+      }
+    },
+    "Silver": {
+      "damage": {
+        "weapon": 0.6,
+        "spirit": 0.15,
+        "melee": 0.25
+      },
+      "affinity": {
+        "fire_rate": 0.8,
+        "weapon_damage": 0.7,
+        "health": 0.6,
+        "melee": 0.5,
+        "bullet_lifesteal": 0.5,
+        "cooldown": 0.4,
+        "mobility": 0.3
+      },
+      "notes": {
+        "fire_rate": "Slam Fire and Lycan Curse give extra fire rate",
+        "health": "Lycan Curse gains max health and more fury at low health",
+        "melee": "Boot Kick and the werewolf form fight up close"
+      },
+      "summary": "Gun brawler with a transformation.",
+      "imbue": {
+        "damage": "Entangling Bola",
+        "cooldown": "Lycan Curse",
+        "cooldown_non_ult": "Slam Fire",
+        "duration": "Lycan Curse",
+        "range": "Entangling Bola",
+        "frequent": "Slam Fire"
+      },
+      "primaryInvestment": "weapon",
+      "antiHealDelivery": "gun",
+      "survival": "resist_hp",
+      "coreItems": [
+        "Stalker",
+        "Slowing Bullets"
+      ],
+      "abilityMaxPriority": [
+        4,
+        1,
+        2,
+        3
+      ]
+    },
+    "Sinclair": {
+      "defaultArchetype": "bolt_spirit",
+      "archetypes": {
+        "bolt_spirit": {
+          "name": "Spirit / Vexing Bolt",
+          "summary": "Spirit burst: Vexing Bolt (up to 1.86×) repeated by the Assistant; the ult copies the enemy's.",
+          "damage": {
+            "weapon": 0.3,
+            "spirit": 0.7,
+            "melee": 0
+          },
+          "affinity": {
+            "spirit_power": 0.9,
+            "cooldown": 0.7,
+            "range": 0.5,
+            "duration": 0.4,
+            "fire_rate": 0.3
+          },
+          "notes": {
+            "spirit_power": "Vexing Bolt scales up to 1.86× with spirit",
+            "cooldown": "Audience Participation copies ults: cooldown is everything",
+            "range": "Vexing Bolt gains damage with distance"
+          },
+          "imbue": {
+            "damage": "Vexing Bolt",
+            "cooldown": "Audience Participation",
+            "cooldown_non_ult": "Rabbit Hex",
+            "duration": "Rabbit Hex",
+            "range": "Vexing Bolt",
+            "frequent": "Vexing Bolt"
+          },
+          "primaryInvestment": "spirit",
+          "antiHealDelivery": "spirit",
+          "survival": "barrier_cleanse",
+          "coreItems": [
+            "Rapid Recharge",
+            "Improved Spirit"
+          ],
+          "abilityMaxPriority": [
+            4,
+            3,
+            2,
+            1
+          ]
+        },
+        "hex_support": {
+          "name": "Support / Rabbit Hex",
+          "summary": "Control support: Rabbit Hex and the Assistant, protection items for the team and copied ults.",
+          "damage": {
+            "weapon": 0.4,
+            "spirit": 0.6,
+            "melee": 0
+          },
+          "affinity": {
+            "cooldown": 0.8,
+            "duration": 0.7,
+            "range": 0.6,
+            "health": 0.6,
+            "healing_power": 0.5,
+            "spirit_power": 0.5,
+            "fire_rate": 0.4
+          },
+          "notes": {
+            "cooldown": "Rabbit Hex (26s) and the copied ult on rotation",
+            "duration": "Spectral Assistant and Rabbit Hex last longer",
+            "fire_rate": "the Spectral Assistant attacks with every shot you fire"
+          },
+          "imbue": {
+            "damage": "Vexing Bolt",
+            "cooldown": "Audience Participation",
+            "cooldown_non_ult": "Rabbit Hex",
+            "duration": "Rabbit Hex",
+            "range": "Audience Participation",
+            "frequent": "Vexing Bolt"
+          },
+          "primaryInvestment": "vitality",
+          "antiHealDelivery": "spirit",
+          "survival": "barrier_cleanse",
+          "coreItems": [
+            "Arcane Surge",
+            "Guardian Ward"
+          ],
+          "abilityMaxPriority": [
+            4,
+            3,
+            2,
+            1
+          ]
+        }
+      }
+    },
+    "Solomon": {
+      "damage": {
+        "weapon": 0.35,
+        "spirit": 0.65,
+        "melee": 0
+      },
+      "affinity": {
+        "cooldown": 0.7,
+        "spirit_power": 0.6,
+        "range": 0.4,
+        "duration": 0.3,
+        "weapon_damage": 0.3
+      },
+      "notes": {
+        "cooldown": "Setup Bishop (12s) and Rook Battery control an area",
+        "spirit_power": "pieces deal spirit damage and Kingside Knight gives a barrier"
+      },
+      "summary": "Area control strategist (less certain profile: many per-level scalings).",
+      "imbue": {
+        "damage": "Setup Bishop",
+        "cooldown": "Develop Queen",
+        "cooldown_non_ult": "Rook Battery",
+        "duration": "Rook Battery",
+        "range": "Setup Bishop",
+        "frequent": "Setup Bishop"
+      },
+      "innate": {
+        "cleanse": {
+          "ability": "Kingside Knight",
+          "tier": 3
+        }
+      },
+      "primaryInvestment": "spirit",
+      "antiHealDelivery": "spirit",
+      "survival": "barrier_cleanse",
+      "coreItems": [
+        "Compress Cooldown"
+      ],
+      "abilityMaxPriority": [
+        1,
+        3,
+        2,
+        4
+      ]
+    },
+    "The Doorman": {
+      "damage": {
+        "weapon": 0.3,
+        "spirit": 0.7,
+        "melee": 0
+      },
+      "affinity": {
+        "spirit_power": 0.8,
+        "cooldown": 0.7,
+        "range": 0.5,
+        "charges": 0.4,
+        "duration": 0.4
+      },
+      "notes": {
+        "spirit_power": "Call Bell and Hotel Guest deal spirit damage",
+        "range": "Doorway and Luggage Cart depend on range",
+        "charges": "Call Bell gains a charge with the upgrade"
+      },
+      "summary": "Map control with spirit.",
+      "imbue": {
+        "damage": "Call Bell",
+        "cooldown": "Doorway",
+        "cooldown_non_ult": "Luggage Cart",
+        "duration": "Doorway",
+        "range": "Doorway",
+        "charges": "Call Bell",
+        "frequent": "Call Bell"
+      },
+      "innate": {
+        "unstoppable": {
+          "ability": "Hotel Guest",
+          "tier": 3
+        }
+      },
+      "primaryInvestment": "spirit",
+      "antiHealDelivery": "spirit",
+      "survival": "barrier_cleanse",
+      "coreItems": [
+        "Rapid Recharge"
+      ],
+      "abilityMaxPriority": [
+        1,
+        3,
+        4,
+        2
+      ]
+    },
+    "Venator": {
+      "damage": {
+        "weapon": 0.8,
+        "spirit": 0.2,
+        "melee": 0
+      },
+      "affinity": {
+        "weapon_damage": 0.9,
+        "fire_rate": 0.5,
+        "ammo": 0.5,
+        "cooldown": 0.5,
+        "bullet_lifesteal": 0.4,
+        "charges": 0.3,
+        "weapon_range": 0.3
+      },
+      "notes": {
+        "weapon_damage": "Grenade, Gutshot and Ira Domini scale with weapon damage",
+        "cooldown": "Ira Domini (160s) executes low-health targets"
+      },
+      "summary": "Pure shooter: abilities scale with weapon damage.",
+      "imbue": {
+        "damage": "Hex-Lined Snap Trap",
+        "cooldown": "Ira Domini",
+        "cooldown_non_ult": "Gutshot",
+        "duration": "Ira Domini",
+        "range": "Consecrating Grenade",
+        "charges": "Hex-Lined Snap Trap",
+        "frequent": "Gutshot"
+      },
+      "innate": {
+        "antiHeal": {
+          "ability": "Consecrating Grenade",
+          "tier": 0
+        }
+      },
+      "primaryInvestment": "weapon",
+      "antiHealDelivery": "gun",
+      "coreItems": [
+        "Swift Striker",
+        "Cultist Sacrifice"
+      ],
+      "abilityMaxPriority": [
+        2,
+        4,
+        1,
+        3
+      ],
+      "survival": "resist_hp"
+    },
+    "Victor": {
+      "damage": {
+        "weapon": 0.45,
+        "spirit": 0.55,
+        "melee": 0
+      },
+      "affinity": {
+        "health": 0.9,
+        "spirit_power": 0.6,
+        "healing_power": 0.5,
+        "duration": 0.5,
+        "spirit_lifesteal": 0.5,
+        "cooldown": 0.4,
+        "range": 0.4,
+        "fire_rate": 0.3
+      },
+      "notes": {
+        "health": "Pain Battery charges by taking damage and Aura of Suffering hurts you",
+        "healing_power": "Pain Battery's heals scale with healing",
+        "duration": "Aura of Suffering is channeled for up to 8s"
+      },
+      "summary": "Tank that feeds on his own damage.",
+      "imbue": {
+        "damage": "Pain Battery",
+        "cooldown": "Shocking Reanimation",
+        "cooldown_non_ult": "Jumpstart",
+        "duration": "Aura of Suffering",
+        "range": "Aura of Suffering",
+        "charges": "Jumpstart",
+        "frequent": "Pain Battery"
+      },
+      "primaryInvestment": "spirit",
+      "antiHealDelivery": "spirit",
+      "survival": "resist_hp",
+      "coreItems": [
+        "Spirit Lifesteal",
+        "Torment Pulse",
+        "Healing Booster"
+      ],
+      "abilityMaxPriority": [
+        1,
+        4,
+        2,
+        3
+      ]
+    },
+    "Vindicta": {
+      "damage": {
+        "weapon": 0.6,
+        "spirit": 0.4,
+        "melee": 0
+      },
+      "affinity": {
+        "weapon_damage": 0.7,
+        "ammo": 0.6,
+        "duration": 0.6,
+        "weapon_range": 0.6,
+        "spirit_power": 0.5,
+        "fire_rate": 0.5,
+        "cooldown": 0.5,
+        "charges": 0.3
+      },
+      "notes": {
+        "duration": "Flight (13s) is when you deal the most damage",
+        "ammo": "Flight gains +50% ammo with the upgrade",
+        "weapon_range": "sniper: shoots from afar",
+        "spirit_power": "Assassinate scales with spirit"
+      },
+      "summary": "Aerial sniper; the gun is the base, Assassinate wants spirit.",
+      "imbue": {
+        "damage": "Assassinate",
+        "cooldown": "Flight",
+        "cooldown_non_ult": "Stake",
+        "duration": "Flight",
+        "range": "Stake",
+        "charges": "Assassinate",
+        "frequent": "Crow Familiar"
+      },
+      "innate": {
+        "antiHeal": {
+          "ability": "Crow Familiar",
+          "tier": 1
+        }
+      },
+      "primaryInvestment": "weapon",
+      "antiHealDelivery": "hybrid",
+      "survival": "barrier_cleanse",
+      "coreItems": [
+        "Rapid Recharge",
+        "Opening Rounds",
+        "Long Range"
+      ],
+      "abilityMaxPriority": [
+        1,
+        2,
+        4,
+        3
+      ]
+    },
+    "Violet": {
+      "damage": {
+        "weapon": 0.3,
+        "spirit": 0.65,
+        "melee": 0.05
+      },
+      "affinity": {
+        "spirit_power": 0.85,
+        "cooldown": 0.8,
+        "charges": 0.5,
+        "range": 0.5,
+        "duration": 0.45,
+        "weapon_damage": 0.35,
+        "fire_rate": 0.3,
+        "spirit_lifesteal": 0.3
+      },
+      "notes": {
+        "spirit_power": "Living Ink, Flow State, Still Life and Abstract Landscape scale with spirit",
+        "cooldown": "Living Ink hits reduce ability and item cooldowns; any ability recharges Flow State",
+        "charges": "Living Ink has 2 charges (7s between them)",
+        "weapon_damage": "Living Ink empowers shots (120% damage), but the gun is slow (1.5 shots/s)",
+        "range": "ult with an 18m radius and a 15m Flow State flick"
+      },
+      "summary": "Spirit caster and support: pokes with empowered shots, stuns with Still Life and an ult that silences enemies and gives allies spirit.",
+      "imbue": {
+        "damage": "Flow State",
+        "cooldown": "Abstract Landscape",
+        "cooldown_non_ult": "Still Life",
+        "duration": "Still Life",
+        "range": "Abstract Landscape",
+        "charges": "Living Ink",
+        "frequent": "Living Ink"
+      },
+      "primaryInvestment": "spirit",
+      "antiHealDelivery": "spirit",
+      "survival": "barrier_cleanse",
+      "coreItems": [
+        "Healing Booster",
+        "Radiant Regeneration"
+      ],
+      "abilityMaxPriority": [
+        3,
+        1,
+        2,
+        4
+      ]
+    },
+    "Viscous": {
+      "defaultArchetype": "splatter_spirit",
+      "archetypes": {
+        "splatter_spirit": {
+          "name": "Spirit / Splatter and Goo Ball",
+          "summary": "Hard-to-kill spirit tank.",
+          "damage": {
+            "weapon": 0.3,
+            "spirit": 0.6,
+            "melee": 0.1
+          },
+          "affinity": {
+            "spirit_power": 0.7,
+            "cooldown": 0.7,
+            "health": 0.6,
+            "duration": 0.5,
+            "charges": 0.4,
+            "range": 0.4,
+            "melee": 0.3
+          },
+          "notes": {
+            "cooldown": "Splatter, The Cube and Puddle Punch on rotation",
+            "duration": "Goo Ball (11s) and the Splatter puddles last longer",
+            "spirit_power": "Splatter and Goo Ball scale with spirit"
+          },
+          "imbue": {
+            "damage": "Splatter",
+            "cooldown": "Splatter",
+            "cooldown_non_ult": "The Cube",
+            "duration": "The Cube",
+            "range": "Splatter",
+            "charges": "Puddle Punch",
+            "frequent": "Splatter"
+          },
+          "primaryInvestment": "spirit",
+          "antiHealDelivery": "spirit",
+          "survival": "resist_hp",
+          "coreItems": [
+            "Improved Spirit"
+          ],
+          "abilityMaxPriority": [
+            1,
+            2,
+            3,
+            4
+          ]
+        },
+        "fist_gun": {
+          "name": "Gun and melee / Puddle Punch",
+          "summary": "Close-range brawler: shots, melee and Puddle Punch (scales with melee); The Cube to survive.",
+          "damage": {
+            "weapon": 0.45,
+            "spirit": 0.2,
+            "melee": 0.35
+          },
+          "affinity": {
+            "melee": 0.8,
+            "weapon_damage": 0.7,
+            "health": 0.7,
+            "fire_rate": 0.5,
+            "cooldown": 0.5,
+            "charges": 0.4
+          },
+          "notes": {
+            "melee": "Puddle Punch scales with melee damage",
+            "charges": "Puddle Punch gains charges at T1",
+            "health": "frontline; The Cube heals and protects"
+          },
+          "imbue": {
+            "damage": "Splatter",
+            "cooldown": "Puddle Punch",
+            "cooldown_non_ult": "The Cube",
+            "duration": "Goo Ball",
+            "range": "Puddle Punch",
+            "charges": "Puddle Punch",
+            "frequent": "Puddle Punch"
+          },
+          "primaryInvestment": "weapon",
+          "antiHealDelivery": "gun",
+          "survival": "resist_hp",
+          "coreItems": [
+            "Express Shot",
+            "Spirit Snatch"
+          ],
+          "abilityMaxPriority": [
+            1,
+            2,
+            3,
+            4
+          ]
+        }
+      }
+    },
+    "Vyper": {
+      "damage": {
+        "weapon": 0.65,
+        "spirit": 0.35,
+        "melee": 0
+      },
+      "affinity": {
+        "weapon_damage": 0.8,
+        "fire_rate": 0.7,
+        "ammo": 0.6,
+        "mobility": 0.5,
+        "charges": 0.4,
+        "spirit_power": 0.4,
+        "cooldown": 0.4,
+        "bullet_lifesteal": 0.4
+      },
+      "notes": {
+        "weapon_damage": "the 94 DPS gun is the main damage source",
+        "ammo": "a 24-round mag at 14 shots/s runs out very fast",
+        "charges": "Screwjab Dagger has 2 charges"
+      },
+      "summary": "Gun assassin with poison.",
+      "imbue": {
+        "damage": "Lethal Venom",
+        "cooldown": "Petrifying Bola",
+        "cooldown_non_ult": "Lethal Venom",
+        "range": "Lethal Venom",
+        "charges": "Screwjab Dagger",
+        "frequent": "Screwjab Dagger"
+      },
+      "innate": {
+        "antiHeal": {
+          "ability": "Lethal Venom",
+          "tier": 2
+        }
+      },
+      "primaryInvestment": "weapon",
+      "antiHealDelivery": "hybrid",
+      "coreItems": [
+        "Quicksilver Reload"
+      ],
+      "abilityMaxPriority": [
+        3,
+        2,
+        4,
+        1
+      ],
+      "survival": "barrier_cleanse"
+    },
+    "Warden": {
+      "defaultArchetype": "gun_cage",
+      "archetypes": {
+        "gun_cage": {
+          "name": "Gun / Binding Word",
+          "summary": "Frontline gun fighter: Binding Word pins the target for your shots.",
+          "damage": {
+            "weapon": 0.6,
+            "spirit": 0.4,
+            "melee": 0
+          },
+          "affinity": {
+            "health": 0.7,
+            "weapon_damage": 0.7,
+            "fire_rate": 0.5,
+            "ammo": 0.5,
+            "cooldown": 0.5,
+            "spirit_power": 0.4,
+            "duration": 0.4
+          },
+          "notes": {
+            "health": "frontline; Last Stand requires surviving while channeling",
+            "weapon_damage": "Binding Word gives +20% bullet damage on rooted targets",
+            "spirit_power": "Binding Word (2.4×) and Last Stand scale with spirit"
+          },
+          "imbue": {
+            "damage": "Binding Word",
+            "cooldown": "Alchemical Flask",
+            "cooldown_non_ult": "Willpower",
+            "duration": "Last Stand",
+            "range": "Alchemical Flask",
+            "frequent": "Alchemical Flask"
+          },
+          "innate": {
+            "unstoppable": {
+              "ability": "Last Stand",
+              "tier": 3
+            }
+          },
+          "primaryInvestment": "weapon",
+          "antiHealDelivery": "hybrid",
+          "survival": "resist_hp",
+          "coreItems": [
+            "Opening Rounds",
+            "Titanic Magazine",
+            "Quicksilver Reload"
+          ],
+          "abilityMaxPriority": [
+            1,
+            3,
+            2,
+            4
+          ]
+        },
+        "flask_spirit": {
+          "name": "Spirit / Alchemical Flask",
+          "summary": "Spirit fighter: Alchemical Flask (12s) on rotation and Binding Word (2.44×); spirit also gives Warden fire rate.",
+          "damage": {
+            "weapon": 0.35,
+            "spirit": 0.65,
+            "melee": 0
+          },
+          "affinity": {
+            "spirit_power": 0.85,
+            "cooldown": 0.7,
+            "health": 0.7,
+            "duration": 0.5,
+            "fire_rate": 0.4,
+            "range": 0.4
+          },
+          "notes": {
+            "spirit_power": "Binding Word (2.44×) and Alchemical Flask (0.63×) scale with spirit, which also gives fire rate",
+            "cooldown": "Alchemical Flask (12s) is the steady damage",
+            "health": "frontline; Last Stand requires surviving while channeling"
+          },
+          "imbue": {
+            "damage": "Alchemical Flask",
+            "cooldown": "Alchemical Flask",
+            "cooldown_non_ult": "Binding Word",
+            "duration": "Last Stand",
+            "range": "Alchemical Flask",
+            "frequent": "Alchemical Flask"
+          },
+          "innate": {
+            "unstoppable": {
+              "ability": "Last Stand",
+              "tier": 3
+            }
+          },
+          "primaryInvestment": "spirit",
+          "antiHealDelivery": "spirit",
+          "survival": "resist_hp",
+          "coreItems": [
+            "Quicksilver Reload",
+            "Improved Spirit",
+            "Compress Cooldown"
+          ],
+          "abilityMaxPriority": [
+            1,
+            3,
+            2,
+            4
+          ]
+        }
+      }
+    },
+    "Wraith": {
+      "damage": {
+        "weapon": 0.6,
+        "spirit": 0.4,
+        "melee": 0
+      },
+      "affinity": {
+        "fire_rate": 0.8,
+        "weapon_damage": 0.7,
+        "spirit_power": 0.5,
+        "duration": 0.5,
+        "cooldown": 0.5,
+        "bullet_lifesteal": 0.4,
+        "ammo": 0.3
+      },
+      "notes": {
+        "fire_rate": "Full Auto increases fire rate and Card Trick makes cards with weapon damage",
+        "weapon_damage": "weapon damage generates the Card Trick cards",
+        "duration": "Full Auto lasts longer"
+      },
+      "summary": "Gun duelist with spirit cards.",
+      "imbue": {
+        "damage": "Card Trick",
+        "cooldown": "Telekinesis",
+        "cooldown_non_ult": "Project Mind",
+        "duration": "Full Auto",
+        "range": "Telekinesis",
+        "charges": "Card Trick",
+        "frequent": "Card Trick"
+      },
+      "primaryInvestment": "weapon",
+      "antiHealDelivery": "hybrid",
+      "survival": "barrier_cleanse",
+      "coreItems": [
+        "Quicksilver Reload",
+        "Tesla Bullets",
+        "Swift Striker"
+      ],
+      "abilityMaxPriority": [
+        3,
+        1,
+        2,
+        4
+      ]
+    },
+    "Yamato": {
+      "defaultArchetype": "slash_spirit",
+      "archetypes": {
+        "slash_spirit": {
+          "name": "Spirit / Power Slash",
+          "summary": "Spirit burst: a charged Power Slash (1.96×) and Crimson Slash to heal; the ult resets the abilities.",
+          "damage": {
+            "weapon": 0.25,
+            "spirit": 0.6,
+            "melee": 0.15
+          },
+          "affinity": {
+            "spirit_power": 0.9,
+            "cooldown": 0.7,
+            "health": 0.5,
+            "duration": 0.4,
+            "melee": 0.3,
+            "mobility": 0.3
+          },
+          "notes": {
+            "spirit_power": "Power Slash scales 1.96× with spirit",
+            "cooldown": "Power Slash (12s) and the ult resets abilities",
+            "duration": "Shadow Transformation extends with kills"
+          },
+          "imbue": {
+            "damage": "Power Slash",
+            "cooldown": "Shadow Transformation",
+            "cooldown_non_ult": "Power Slash",
+            "duration": "Shadow Transformation",
+            "range": "Crimson Slash",
+            "charges": "Flying Slash",
+            "frequent": "Crimson Slash"
+          },
+          "primaryInvestment": "spirit",
+          "antiHealDelivery": "spirit",
+          "survival": "barrier_cleanse",
+          "coreItems": [
+            "Healing Booster",
+            "Healbane",
+            "Improved Spirit"
+          ],
+          "abilityMaxPriority": [
+            2,
+            3,
+            4,
+            1
+          ]
+        },
+        "gun_crimson": {
+          "name": "Gun and melee / Crimson Slash",
+          "summary": "Close-range duelist: shots and melee with Stalker and Lifestrike; Crimson Slash and Flying Slash stick to the target.",
+          "damage": {
+            "weapon": 0.5,
+            "spirit": 0.2,
+            "melee": 0.3
+          },
+          "affinity": {
+            "weapon_damage": 0.7,
+            "melee": 0.7,
+            "health": 0.6,
+            "fire_rate": 0.5,
+            "mobility": 0.5,
+            "cooldown": 0.5,
+            "bullet_lifesteal": 0.4
+          },
+          "notes": {
+            "melee": "Flying Slash scales with melee damage",
+            "weapon_damage": "gun builds go Stalker and Hunter's Aura",
+            "health": "fights up close and heals with Crimson Slash"
+          },
+          "imbue": {
+            "damage": "Power Slash",
+            "cooldown": "Shadow Transformation",
+            "cooldown_non_ult": "Power Slash",
+            "duration": "Shadow Transformation",
+            "range": "Crimson Slash",
+            "charges": "Flying Slash",
+            "frequent": "Crimson Slash"
+          },
+          "primaryInvestment": "weapon",
+          "antiHealDelivery": "gun",
+          "survival": "resist_hp",
+          "coreItems": [
+            "Stalker",
+            "Radiant Regeneration",
+            "Bullet Resist Shredder"
+          ],
+          "abilityMaxPriority": [
+            2,
+            3,
+            4,
+            1
+          ]
+        }
+      }
+    }
+  }
+}
