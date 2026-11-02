@@ -178,7 +178,7 @@
         "cooldown": "Granny Long Legs",
         "cooldown_non_ult": "Threadsap",
         "duration": "Granny Long Legs",
-        "range": "Baba's Brew",
+        "range": "Granny Long Legs",
         "charges": "Threadsap",
         "frequent": "Threadsap"
       },
@@ -737,8 +737,8 @@
             "frequent": "Sleep Dagger"
           },
           "coreItems": [
-            "Active Reload",
             "Swift Striker",
+            "Active Reload",
             "Surge of Power"
           ],
           "abilityMaxPriority": [
@@ -1150,8 +1150,7 @@
           "survival": "resist_hp",
           "coreItems": [
             "Arcane Surge",
-            "Healbane",
-            "Torment Pulse"
+            "Healbane"
           ],
           "abilityMaxPriority": [
             1,
