@@ -278,7 +278,8 @@
           "survival": "resist_hp",
           "coreItems": [
             "Stalker",
-            "Headhunter"
+            "Headhunter",
+            "Slowing Hex"
           ],
           "abilityMaxPriority": [
             3,
@@ -1955,7 +1956,7 @@
       "coreItems": [
         "Opening Rounds",
         "Cultist Sacrifice",
-        "Swift Striker"
+        "Fortitude"
       ],
       "abilityMaxPriority": [
         4,
@@ -2514,8 +2515,8 @@
       "survival": "resist_hp",
       "coreItems": [
         "Spirit Lifesteal",
-        "Torment Pulse",
-        "Healing Booster"
+        "Healing Booster",
+        "Torment Pulse"
       ],
       "abilityMaxPriority": [
         1,

@@ -12,10 +12,10 @@
     "Celeste": { "first": ["Slowing Hex", "Knockdown", "Dispel Magic"], "alternatives": ["Phantom Strike", "Vortex Web", "Witchmail", "Spirit Shielding", "Healbane", "Disarming Hex", "Counterspell", "Spellbreaker"] },
     "Deadman Danny": { "first": ["Spirit Shielding", "Reactive Barrier", "Extra Stamina"], "alternatives": ["Debuff Reducer", "Slowing Hex", "Knockdown", "Spirit Resilience", "Silence Wave", "Metal Skin", "Dispel Magic", "Spellbreaker"] },
     "Drifter": { "first": ["Metal Skin", "Divine Barrier", "Counterspell"], "alternatives": ["Suppressor", "Juggernaut", "Dispel Magic", "Silence Wave", "Battle Vest", "Disarming Hex", "Plated Armor", "Rusted Barrel"] },
-    "Dynamo": { "first": ["Unstoppable", "Knockdown", "Rescue Beam"], "alternatives": ["Slowing Hex", "Diviner's Kevlar", "Spellbreaker", "Silence Wave", "Cheat Death", "Warp Stone", "Metal Skin", "Debuff Reducer"] },
+    "Dynamo": { "first": ["Unstoppable", "Slowing Hex", "Knockdown"], "alternatives": ["Diviner's Kevlar", "Spellbreaker", "Silence Wave", "Cheat Death", "Warp Stone", "Metal Skin", "Debuff Reducer", "Cursed Relic"] },
     "Graves": { "first": ["Monster Rounds", "Dispel Magic", "Ricochet"], "alternatives": ["Return Fire", "Reactive Barrier", "Spirit Burn", "Healbane", "Restorative Locket", "Spirit Shielding"] },
     "Grey Talon": { "first": ["Spellbreaker", "Knockdown", "Phantom Strike"], "alternatives": ["Counterspell", "Rusted Barrel", "Slowing Hex", "Spirit Shielding", "Dispel Magic", "Spirit Resilience"] },
-    "Haze": { "first": ["Metal Skin", "Plated Armor", "Reactive Barrier"], "alternatives": ["Return Fire", "Dispel Magic", "Suppressor", "Indomitable", "Bullet Resilience", "Juggernaut", "Cursed Relic", "Warp Stone"] },
+    "Haze": { "first": ["Metal Skin", "Plated Armor", "Reactive Barrier"], "alternatives": ["Return Fire", "Dispel Magic", "Suppressor", "Indomitable", "Bullet Resilience", "Cursed Relic", "Juggernaut", "Warp Stone"] },
     "Holliday": { "first": ["Slowing Hex", "Counterspell", "Indomitable"], "alternatives": ["Vortex Web", "Spirit Shielding", "Phantom Strike", "Debuff Reducer", "Reactive Barrier", "Spirit Resilience", "Rescue Beam", "Knockdown"] },
     "Infernus": { "first": ["Dispel Magic", "Plated Armor", "Debuff Reducer"], "alternatives": ["Counterspell", "Witchmail", "Suppressor", "Juggernaut", "Vortex Web", "Indomitable", "Slowing Hex", "Enchanter's Emblem"] },
     "Ivy": { "first": ["Counterspell", "Dispel Magic", "Unstoppable"], "alternatives": ["Suppressor", "Silence Wave", "Reactive Barrier", "Knockdown", "Metal Skin", "Spirit Burn"] },
@@ -40,12 +40,12 @@
     "The Doorman": { "first": ["Indomitable", "Counterspell", "Warp Stone"], "alternatives": ["Dispel Magic", "Silence Wave", "Reactive Barrier", "Spirit Shielding", "Stamina Mastery", "Unstoppable", "Cursed Relic"] },
     "Venator": { "first": ["Metal Skin", "Rusted Barrel", "Disarming Hex"], "alternatives": ["Plated Armor", "Debuff Reducer", "Weapon Shielding", "Juggernaut", "Bullet Resilience", "Warp Stone", "Suppressor"] },
     "Victor": { "first": ["Healbane", "Crippling Headshot", "Silence Wave"], "alternatives": ["Decay", "Scourge", "Inhibitor", "Toxic Bullets", "Witchmail", "Counterspell", "Slowing Hex", "Spirit Burn"] },
-    "Vindicta": { "first": ["Phantom Strike", "Knockdown", "Slowing Hex"], "alternatives": ["Dispel Magic", "Suppressor", "Counterspell", "Metal Skin", "Warp Stone", "Plated Armor"] },
+    "Vindicta": { "first": ["Knockdown", "Phantom Strike", "Slowing Hex"], "alternatives": ["Dispel Magic", "Suppressor", "Plated Armor", "Counterspell", "Metal Skin", "Warp Stone"] },
     "Violet": { "first": ["Reactive Barrier", "Spirit Shielding", "Debuff Reducer"], "alternatives": ["Extra Stamina", "Dispel Magic", "Enduring Speed", "Warp Stone", "Silence Wave", "Healbane", "Toxic Bullets", "Knockdown"] },
     "Viscous": { "first": ["Rebuttal", "Knockdown", "Silence Wave"], "alternatives": ["Spirit Shielding", "Suppressor", "Warp Stone", "Cursed Relic"] },
     "Vyper": { "first": ["Metal Skin", "Suppressor", "Return Fire"], "alternatives": ["Indomitable", "Plated Armor", "Bullet Resilience", "Counterspell", "Dispel Magic", "Extra Stamina", "Disarming Hex", "Knockdown"] },
     "Warden": { "first": ["Dispel Magic", "Extra Stamina", "Metal Skin"], "alternatives": ["Suppressor", "Healbane", "Toxic Bullets", "Silence Wave", "Unstoppable", "Plated Armor"] },
-    "Wraith": { "first": ["Plated Armor", "Counterspell", "Indomitable"], "alternatives": ["Slowing Hex", "Metal Skin", "Suppressor", "Juggernaut", "Divine Barrier", "Ethereal Shift", "Cursed Relic", "Silencer"] },
-    "Yamato": { "first": ["Spellbreaker", "Silence Wave", "Counterspell"], "alternatives": ["Spirit Shielding", "Dispel Magic", "Spirit Resilience", "Healbane", "Cursed Relic", "Spirit Burn", "Silencer"] }
+    "Wraith": { "first": ["Plated Armor", "Counterspell", "Indomitable"], "alternatives": ["Slowing Hex", "Metal Skin", "Suppressor", "Divine Barrier", "Reactive Barrier", "Juggernaut", "Ethereal Shift", "Cursed Relic"] },
+    "Yamato": { "first": ["Spellbreaker", "Counterspell", "Silence Wave"], "alternatives": ["Spirit Shielding", "Dispel Magic", "Spirit Resilience", "Healbane", "Cursed Relic", "Spirit Burn", "Silencer"] }
   }
 }
