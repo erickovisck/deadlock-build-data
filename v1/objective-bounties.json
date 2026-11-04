@@ -1,0 +1,6 @@
+{
+  "patch": "10-30-2026",
+  "midboss": { "base": 1500, "perMin": 25, "tolerance": 0.06 },
+  "rift": { "base": 1482, "perMin": 222, "fromMin": 13, "tolerance": 0.1 },
+  "walkerShare": [380, 800]
+}

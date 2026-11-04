@@ -404,9 +404,9 @@
       },
       "summary": "Pure spirit caster.",
       "imbue": {
-        "damage": "Radiant Daggers",
+        "damage": "Shining Wonder",
         "cooldown": "Dazzling Trick",
-        "cooldown_non_ult": "Light Eater",
+        "cooldown_non_ult": "Dazzling Trick",
         "duration": "Light Eater",
         "range": "Radiant Daggers",
         "charges": "Radiant Daggers",
@@ -417,8 +417,8 @@
       "survival": "barrier_cleanse",
       "coreItems": [
         "Radiant Regeneration",
-        "Suppressor",
-        "Healing Booster"
+        "Healing Booster",
+        "Suppressor"
       ],
       "abilityMaxPriority": [
         3,
@@ -1052,10 +1052,10 @@
             "Mystic Slow"
           ],
           "abilityMaxPriority": [
-            2,
-            4,
             3,
-            1
+            2,
+            1,
+            4
           ]
         },
         "kudzu_gun": {
@@ -1098,10 +1098,10 @@
             "Active Reload"
           ],
           "abilityMaxPriority": [
-            2,
-            4,
             3,
-            1
+            2,
+            1,
+            4
           ]
         }
       }
@@ -1556,7 +1556,7 @@
       "imbue": {
         "damage": "Burrow",
         "cooldown": "Scorn",
-        "cooldown_non_ult": "Sand Blast",
+        "cooldown_non_ult": "Scorn",
         "duration": "Combo",
         "range": "Scorn",
         "frequent": "Scorn"
@@ -1853,9 +1853,9 @@
           ],
           "abilityMaxPriority": [
             2,
-            4,
+            1,
             3,
-            1
+            4
           ],
           "innate": {
             "noItemProcs": [
@@ -1900,9 +1900,9 @@
           },
           "abilityMaxPriority": [
             2,
-            4,
+            1,
             3,
-            1
+            4
           ],
           "innate": {
             "noItemProcs": [
@@ -2568,8 +2568,8 @@
       "survival": "barrier_cleanse",
       "coreItems": [
         "Rapid Recharge",
-        "Opening Rounds",
-        "Long Range"
+        "Long Range",
+        "Opening Rounds"
       ],
       "abilityMaxPriority": [
         1,
