@@ -145,9 +145,9 @@
       ],
       "abilityMaxPriority": [
         3,
+        2,
         1,
-        4,
-        2
+        4
       ],
       "survival": "resist_hp"
     },
@@ -188,7 +188,7 @@
       "coreItems": [
         "Radiant Regeneration",
         "Healing Booster",
-        "Healbane"
+        "Torment Pulse"
       ],
       "abilityMaxPriority": [
         1,
@@ -2008,10 +2008,10 @@
         "Improved Spirit"
       ],
       "abilityMaxPriority": [
+        1,
         2,
-        3,
         4,
-        1
+        3
       ]
     },
     "Seven": {
@@ -2360,7 +2360,7 @@
         "damage": "Setup Bishop",
         "cooldown": "Develop Queen",
         "cooldown_non_ult": "Rook Battery",
-        "duration": "Rook Battery",
+        "duration": "Kingside Knight",
         "range": "Setup Bishop",
         "frequent": "Setup Bishop"
       },
