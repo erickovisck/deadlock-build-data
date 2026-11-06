@@ -2286,10 +2286,10 @@
             "Improved Spirit"
           ],
           "abilityMaxPriority": [
-            4,
-            3,
             2,
-            1
+            1,
+            4,
+            3
           ]
         },
         "hex_support": {
@@ -2330,10 +2330,10 @@
             "Guardian Ward"
           ],
           "abilityMaxPriority": [
-            4,
-            3,
             2,
-            1
+            1,
+            4,
+            3
           ]
         }
       }
