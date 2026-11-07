@@ -941,7 +941,7 @@
           "coreItems": [
             "Improved Spirit",
             "Titanic Magazine",
-            "Healbane"
+            "Swift Striker"
           ],
           "abilityMaxPriority": [
             3,
@@ -1052,10 +1052,10 @@
             "Mystic Slow"
           ],
           "abilityMaxPriority": [
-            3,
             2,
-            1,
-            4
+            3,
+            4,
+            1
           ]
         },
         "kudzu_gun": {
@@ -1098,10 +1098,10 @@
             "Active Reload"
           ],
           "abilityMaxPriority": [
-            3,
             2,
-            1,
-            4
+            3,
+            4,
+            1
           ]
         }
       }
@@ -1699,9 +1699,9 @@
           },
           "imbue": {
             "damage": "Bookwyrm",
-            "cooldown": "Bookwyrm",
+            "cooldown": "Plot Armor",
             "cooldown_non_ult": "Bookwyrm",
-            "duration": "Bookwyrm",
+            "duration": "Captivating Read",
             "range": "Captivating Read",
             "charges": "Bookwyrm",
             "frequent": "Bookwyrm"
@@ -2152,9 +2152,9 @@
           ],
           "abilityMaxPriority": [
             1,
-            3,
+            2,
             4,
-            2
+            3
           ]
         },
         "brawler_gun": {
@@ -2197,9 +2197,9 @@
           ],
           "abilityMaxPriority": [
             1,
-            3,
+            2,
             4,
-            2
+            3
           ]
         }
       }
