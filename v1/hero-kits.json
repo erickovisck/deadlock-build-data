@@ -1703,8 +1703,7 @@
           "antiHealDelivery": "spirit",
           "survival": "barrier_cleanse",
           "coreItems": [
-            "Improved Spirit",
-            "Rapid Recharge"
+            "Compress Cooldown"
           ],
           "abilityMaxPriority": [
             1,
@@ -1951,10 +1950,10 @@
         "Fortitude"
       ],
       "abilityMaxPriority": [
-        4,
-        3,
         1,
-        2
+        2,
+        4,
+        3
       ],
       "survival": "resist_hp"
     },
