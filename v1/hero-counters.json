@@ -20,7 +20,7 @@
     "Infernus": { "first": ["Dispel Magic", "Plated Armor", "Debuff Reducer"], "alternatives": ["Counterspell", "Witchmail", "Suppressor", "Vortex Web", "Slowing Hex", "Juggernaut", "Indomitable", "Enchanter's Emblem"] },
     "Ivy": { "first": ["Counterspell", "Dispel Magic", "Unstoppable"], "alternatives": ["Suppressor", "Silence Wave", "Reactive Barrier", "Knockdown", "Metal Skin", "Spirit Burn"] },
     "Kelvin": { "first": ["Enduring Speed", "Knockdown", "Slowing Hex"], "alternatives": ["Juggernaut", "Ethereal Shift", "Healbane", "Silence Wave", "Toxic Bullets", "Spirit Burn"] },
-    "Lady Geist": { "first": ["Silence Wave", "Healbane", "Counterspell"], "alternatives": ["Silencer", "Inhibitor", "Spirit Shielding", "Witchmail", "Focus Lens", "Dispel Magic", "Decay", "Spirit Resilience"] },
+    "Lady Geist": { "first": ["Silence Wave", "Healbane", "Counterspell"], "alternatives": ["Inhibitor", "Silencer", "Spirit Shielding", "Witchmail", "Focus Lens", "Dispel Magic", "Decay", "Spirit Resilience"] },
     "Lash": { "first": ["Counterspell", "Spellbreaker", "Knockdown"], "alternatives": ["Slowing Hex", "Indomitable", "Phantom Strike", "Unstoppable", "Ethereal Shift", "Debuff Reducer", "Spirit Shielding", "Reactive Barrier"] },
     "McGinnis": { "first": ["Monster Rounds", "Rusted Barrel", "Knockdown"], "alternatives": ["Suppressor", "Warp Stone", "Disarming Hex", "Spirit Resilience", "Metal Skin"] },
     "Mina": { "first": ["Slowing Hex", "Spellbreaker", "Silence Wave"], "alternatives": ["Plated Armor", "Spirit Shielding", "Spirit Resilience", "Suppressor", "Silencer", "Spirit Sap", "Ethereal Shift", "Knockdown"] },

@@ -186,8 +186,8 @@
       "antiHealDelivery": "hybrid",
       "survival": "barrier_cleanse",
       "coreItems": [
-        "Radiant Regeneration",
         "Torment Pulse",
+        "Radiant Regeneration",
         "Healbane"
       ],
       "abilityMaxPriority": [
@@ -888,9 +888,9 @@
           "antiHealDelivery": "gun",
           "survival": "barrier_cleanse",
           "coreItems": [
+            "Rapid Recharge",
             "Long Range",
-            "Headhunter",
-            "Bullet Resist Shredder"
+            "Headhunter"
           ],
           "abilityMaxPriority": [
             1,
@@ -1470,7 +1470,8 @@
       "antiHealDelivery": "spirit",
       "survival": "barrier_cleanse",
       "coreItems": [
-        "Quicksilver Reload"
+        "Quicksilver Reload",
+        "Improved Spirit"
       ],
       "abilityMaxPriority": [
         1,
@@ -2949,7 +2950,7 @@
           "coreItems": [
             "Healbane",
             "Spirit Lifesteal",
-            "Improved Spirit"
+            "Healing Booster"
           ],
           "abilityMaxPriority": [
             2,
