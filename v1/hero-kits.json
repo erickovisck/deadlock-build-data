@@ -937,8 +937,8 @@
           },
           "coreItems": [
             "Improved Spirit",
-            "Titanic Magazine",
-            "Spirit Lifesteal"
+            "Spirit Lifesteal",
+            "Titanic Magazine"
           ],
           "abilityMaxPriority": [
             3,
@@ -1652,11 +1652,11 @@
           "imbue": {
             "damage": "Bookwyrm",
             "cooldown": "Plot Armor",
-            "cooldown_non_ult": "Plot Armor",
+            "cooldown_non_ult": "Captivating Read",
             "duration": "Captivating Read",
             "range": "Captivating Read",
             "charges": "Bookwyrm",
-            "frequent": "Bookwyrm"
+            "frequent": "Plot Armor"
           },
           "primaryInvestment": "vitality",
           "antiHealDelivery": "spirit",
@@ -1947,8 +1947,8 @@
       "antiHealDelivery": "hybrid",
       "coreItems": [
         "Opening Rounds",
-        "Cultist Sacrifice",
-        "Fortitude"
+        "Fortitude",
+        "Cultist Sacrifice"
       ],
       "abilityMaxPriority": [
         1,
@@ -2751,6 +2751,8 @@
       "primaryInvestment": "weapon",
       "antiHealDelivery": "hybrid",
       "coreItems": [
+        "Swift Striker",
+        "Tesla Bullets",
         "Quicksilver Reload"
       ],
       "abilityMaxPriority": [
