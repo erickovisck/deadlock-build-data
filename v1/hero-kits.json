@@ -556,7 +556,6 @@
             "frequent": "Kinetic Pulse"
           },
           "coreItems": [
-            "Compress Cooldown",
             "Rapid Recharge"
           ],
           "abilityMaxPriority": [
@@ -1756,9 +1755,9 @@
             "Sharpshooter"
           ],
           "abilityMaxPriority": [
+            2,
             3,
             4,
-            2,
             1
           ]
         },
@@ -1799,9 +1798,9 @@
             "Stamina Mastery"
           ],
           "abilityMaxPriority": [
+            2,
             3,
             4,
-            2,
             1
           ]
         }
@@ -2808,7 +2807,7 @@
           "coreItems": [
             "Opening Rounds",
             "Titanic Magazine",
-            "Quicksilver Reload"
+            "Swift Striker"
           ],
           "abilityMaxPriority": [
             1,
