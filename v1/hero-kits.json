@@ -141,13 +141,13 @@
       "primaryInvestment": "spirit",
       "antiHealDelivery": "hybrid",
       "coreItems": [
-        "Improved Spirit"
+        "Spirit Snatch"
       ],
       "abilityMaxPriority": [
         3,
-        2,
         1,
-        4
+        4,
+        2
       ],
       "survival": "resist_hp"
     },
@@ -178,7 +178,7 @@
         "cooldown": "Granny Long Legs",
         "cooldown_non_ult": "Threadsap",
         "duration": "Granny Long Legs",
-        "range": "Granny Long Legs",
+        "range": "Threadsap",
         "charges": "Threadsap",
         "frequent": "Threadsap"
       },
@@ -187,8 +187,7 @@
       "survival": "barrier_cleanse",
       "coreItems": [
         "Torment Pulse",
-        "Radiant Regeneration",
-        "Healbane"
+        "Spirit Snatch"
       ],
       "abilityMaxPriority": [
         1,
@@ -278,7 +277,7 @@
           "coreItems": [
             "Stalker",
             "Headhunter",
-            "Bullet Resist Shredder"
+            "Veil Walker"
           ],
           "abilityMaxPriority": [
             3,
@@ -329,8 +328,8 @@
       "antiHealDelivery": "gun",
       "survival": "resist_hp",
       "coreItems": [
-        "Cultist Sacrifice",
         "Lifestrike",
+        "Cultist Sacrifice",
         "Stalker"
       ],
       "abilityMaxPriority": [
@@ -636,7 +635,7 @@
       "imbue": {
         "damage": "Borrowed Decree",
         "cooldown": "Grasping Hands",
-        "cooldown_non_ult": "Grasping Hands",
+        "cooldown_non_ult": "Jar of Dead",
         "duration": "Borrowed Decree",
         "range": "Grasping Hands",
         "charges": "Jar of Dead",
@@ -687,9 +686,9 @@
       "primaryInvestment": "weapon",
       "antiHealDelivery": "hybrid",
       "coreItems": [
-        "Opening Rounds",
+        "Improved Spirit",
         "Compress Cooldown",
-        "Improved Spirit"
+        "Mystic Shot"
       ],
       "abilityMaxPriority": [
         2,
@@ -737,8 +736,7 @@
           },
           "coreItems": [
             "Swift Striker",
-            "Active Reload",
-            "Bullet Lifesteal"
+            "Active Reload"
           ],
           "abilityMaxPriority": [
             1,
@@ -808,7 +806,7 @@
       }
     },
     "Holliday": {
-      "defaultArchetype": "keg_spirit",
+      "defaultArchetype": "rifle_gun",
       "archetypes": {
         "keg_spirit": {
           "name": "Spirit / Powder Keg and Crackshot",
@@ -844,7 +842,9 @@
           "antiHealDelivery": "spirit",
           "survival": "barrier_cleanse",
           "coreItems": [
-            "Rapid Recharge"
+            "Rapid Recharge",
+            "Healbane",
+            "Improved Spirit"
           ],
           "abilityMaxPriority": [
             1,
@@ -937,7 +937,7 @@
           "coreItems": [
             "Improved Spirit",
             "Spirit Lifesteal",
-            "Titanic Magazine"
+            "Swift Striker"
           ],
           "abilityMaxPriority": [
             3,
@@ -1146,7 +1146,9 @@
           "antiHealDelivery": "spirit",
           "survival": "resist_hp",
           "coreItems": [
-            "Healbane"
+            "Arcane Surge",
+            "Healbane",
+            "Torment Pulse"
           ],
           "abilityMaxPriority": [
             1,
@@ -1196,8 +1198,8 @@
           "antiHealDelivery": "spirit",
           "survival": "resist_hp",
           "coreItems": [
-            "Healing Booster",
-            "Improved Spirit"
+            "Improved Spirit",
+            "Healing Booster"
           ],
           "abilityMaxPriority": [
             1,
@@ -1384,7 +1386,8 @@
           "antiHealDelivery": "spirit",
           "survival": "barrier_cleanse",
           "coreItems": [
-            "Arcane Surge"
+            "Arcane Surge",
+            "Compress Cooldown"
           ],
           "abilityMaxPriority": [
             1,
@@ -1614,8 +1617,8 @@
       },
       "coreItems": [
         "Titanic Magazine",
-        "Healing Booster",
-        "Kinetic Dash"
+        "Kinetic Dash",
+        "Healing Booster"
       ],
       "abilityMaxPriority": [
         4,
@@ -1751,8 +1754,9 @@
           "antiHealDelivery": "gun",
           "survival": "barrier_cleanse",
           "coreItems": [
-            "Opening Rounds",
-            "Sharpshooter"
+            "Sharpshooter",
+            "Tankbuster",
+            "Long Range"
           ],
           "abilityMaxPriority": [
             2,
@@ -1996,7 +2000,8 @@
       "antiHealDelivery": "spirit",
       "survival": "barrier_cleanse",
       "coreItems": [
-        "Improved Spirit"
+        "Improved Spirit",
+        "Guardian Ward"
       ],
       "abilityMaxPriority": [
         1,
@@ -2040,8 +2045,7 @@
             "frequent": "Lightning Ball"
           },
           "coreItems": [
-            "Healbane",
-            "Improved Spirit"
+            "Healbane"
           ],
           "abilityMaxPriority": [
             3,
@@ -2101,7 +2105,7 @@
       }
     },
     "Shiv": {
-      "defaultArchetype": "knives_spirit",
+      "defaultArchetype": "brawler_gun",
       "archetypes": {
         "knives_spirit": {
           "name": "Spirit / Slice and Dice",
@@ -2138,8 +2142,8 @@
           "survival": "resist_hp",
           "coreItems": [
             "Healbane",
-            "Radiant Regeneration",
-            "Decay"
+            "Decay",
+            "Healing Booster"
           ],
           "abilityMaxPriority": [
             1,
@@ -2184,7 +2188,7 @@
           "coreItems": [
             "Bullet Resist Shredder",
             "Hunter's Aura",
-            "Healbane"
+            "Decay"
           ],
           "abilityMaxPriority": [
             1,
@@ -2229,6 +2233,7 @@
       "survival": "resist_hp",
       "coreItems": [
         "Stalker",
+        "Point Blank",
         "Slowing Hex"
       ],
       "abilityMaxPriority": [
@@ -2263,7 +2268,7 @@
           },
           "imbue": {
             "damage": "Vexing Bolt",
-            "cooldown": "Audience Participation",
+            "cooldown": "Spectral Assistant",
             "cooldown_non_ult": "Rabbit Hex",
             "duration": "Rabbit Hex",
             "range": "Vexing Bolt",
@@ -2365,8 +2370,8 @@
       "antiHealDelivery": "spirit",
       "survival": "barrier_cleanse",
       "coreItems": [
-        "Improved Spirit",
-        "Compress Cooldown"
+        "Compress Cooldown",
+        "Improved Spirit"
       ],
       "abilityMaxPriority": [
         1,
@@ -2460,8 +2465,7 @@
       "primaryInvestment": "weapon",
       "antiHealDelivery": "gun",
       "coreItems": [
-        "Bullet Lifesteal",
-        "Swift Striker"
+        "Fortitude"
       ],
       "abilityMaxPriority": [
         2,
@@ -2606,8 +2610,8 @@
       "antiHealDelivery": "spirit",
       "survival": "barrier_cleanse",
       "coreItems": [
-        "Rapid Recharge",
-        "Healbane"
+        "Healbane",
+        "Rapid Recharge"
       ],
       "abilityMaxPriority": [
         3,
@@ -2750,9 +2754,9 @@
       "primaryInvestment": "weapon",
       "antiHealDelivery": "hybrid",
       "coreItems": [
-        "Swift Striker",
-        "Tesla Bullets",
-        "Quicksilver Reload"
+        "Split Shot",
+        "Quicksilver Reload",
+        "Tesla Bullets"
       ],
       "abilityMaxPriority": [
         3,
@@ -2902,9 +2906,9 @@
       "antiHealDelivery": "hybrid",
       "survival": "barrier_cleanse",
       "coreItems": [
-        "Surge of Power",
         "Quicksilver Reload",
-        "Tesla Bullets"
+        "Tesla Bullets",
+        "Surge of Power"
       ],
       "abilityMaxPriority": [
         3,
@@ -2951,8 +2955,8 @@
           "survival": "barrier_cleanse",
           "coreItems": [
             "Healbane",
-            "Spirit Lifesteal",
-            "Healing Booster"
+            "Spirit Snatch",
+            "Spirit Lifesteal"
           ],
           "abilityMaxPriority": [
             2,
