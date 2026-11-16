@@ -133,7 +133,7 @@
       "imbue": {
         "damage": "Flawless Advance",
         "cooldown": "Riposte",
-        "cooldown_non_ult": "Riposte",
+        "cooldown_non_ult": "Disengaging Sigil",
         "duration": "Riposte",
         "range": "Flawless Advance",
         "frequent": "Flawless Advance"
@@ -329,8 +329,8 @@
       "survival": "resist_hp",
       "coreItems": [
         "Lifestrike",
-        "Cultist Sacrifice",
-        "Stalker"
+        "Stalker",
+        "Cultist Sacrifice"
       ],
       "abilityMaxPriority": [
         2,
@@ -1251,8 +1251,8 @@
           ],
           "abilityMaxPriority": [
             1,
-            3,
             2,
+            3,
             4
           ],
           "survival": "resist_hp"
@@ -1297,8 +1297,8 @@
           ],
           "abilityMaxPriority": [
             1,
-            3,
             2,
+            3,
             4
           ],
           "survival": "resist_hp"
@@ -2756,7 +2756,7 @@
       "coreItems": [
         "Split Shot",
         "Quicksilver Reload",
-        "Tesla Bullets"
+        "Bullet Resist Shredder"
       ],
       "abilityMaxPriority": [
         3,
