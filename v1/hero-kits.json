@@ -889,7 +889,7 @@
           "coreItems": [
             "Rapid Recharge",
             "Long Range",
-            "Headhunter"
+            "Bullet Resist Shredder"
           ],
           "abilityMaxPriority": [
             1,
@@ -1338,8 +1338,8 @@
       "primaryInvestment": "spirit",
       "antiHealDelivery": "spirit",
       "coreItems": [
-        "Improved Spirit",
-        "Quicksilver Reload"
+        "Quicksilver Reload",
+        "Improved Spirit"
       ],
       "abilityMaxPriority": [
         1,
@@ -2278,8 +2278,8 @@
           "antiHealDelivery": "spirit",
           "survival": "barrier_cleanse",
           "coreItems": [
-            "Rapid Recharge",
-            "Improved Spirit"
+            "Improved Spirit",
+            "Rapid Recharge"
           ],
           "abilityMaxPriority": [
             2,
