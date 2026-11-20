@@ -449,7 +449,7 @@
       "summary": "Hybrid air diver: marks with Strix Salvo, consumes it with the charged shot and flies in to grab a target with the ult.",
       "imbue": {
         "damage": "Chimera Mk1",
-        "cooldown": "Strix Salvo",
+        "cooldown": "Chimera Mk1",
         "cooldown_non_ult": "Chimera Mk1",
         "duration": "Jettison Fuel",
         "range": "Strix Salvo",
@@ -1199,7 +1199,8 @@
           "survival": "resist_hp",
           "coreItems": [
             "Improved Spirit",
-            "Healing Booster"
+            "Healing Booster",
+            "Rapid Recharge"
           ],
           "abilityMaxPriority": [
             1,
@@ -2614,10 +2615,10 @@
         "Rapid Recharge"
       ],
       "abilityMaxPriority": [
-        3,
         1,
-        2,
-        4
+        3,
+        4,
+        2
       ]
     },
     "Viscous": {
