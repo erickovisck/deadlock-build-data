@@ -45,7 +45,7 @@
     "Viscous": { "first": ["Rebuttal", "Knockdown", "Silence Wave"], "alternatives": ["Spirit Shielding", "Suppressor", "Warp Stone", "Cursed Relic"] },
     "Vyper": { "first": ["Metal Skin", "Indomitable", "Suppressor"], "alternatives": ["Return Fire", "Plated Armor", "Dispel Magic", "Juggernaut", "Bullet Resilience", "Counterspell", "Extra Stamina", "Disarming Hex"] },
     "Warden": { "first": ["Dispel Magic", "Extra Stamina", "Metal Skin"], "alternatives": ["Suppressor", "Healbane", "Toxic Bullets", "Silence Wave", "Unstoppable", "Plated Armor"] },
-    "Wraith": { "first": ["Plated Armor", "Counterspell", "Juggernaut"], "alternatives": ["Slowing Hex", "Metal Skin", "Suppressor", "Indomitable", "Divine Barrier", "Reactive Barrier", "Return Fire", "Cursed Relic"] },
+    "Wraith": { "first": ["Plated Armor", "Juggernaut", "Counterspell"], "alternatives": ["Slowing Hex", "Metal Skin", "Suppressor", "Indomitable", "Divine Barrier", "Reactive Barrier", "Return Fire", "Cursed Relic"] },
     "Yamato": { "first": ["Spellbreaker", "Counterspell", "Silence Wave"], "alternatives": ["Spirit Shielding", "Healbane", "Crippling Headshot", "Dispel Magic", "Spirit Resilience", "Cursed Relic", "Spirit Burn", "Silencer"] }
   }
 }
